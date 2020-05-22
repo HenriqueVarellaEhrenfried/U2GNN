@@ -1,0 +1,7 @@
+torch
+torchvision
+sklearn
+networkx
+scikit-learn
+Cython
+pandas
