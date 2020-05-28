@@ -1,0 +1,14 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,MR,0.0001,4,100,MRCOMPLETE_experiment19,512,0.5,2,1,1024,4,1,19,Experiment 4 with double epoch
+../,MR,0.0001,2,100,MRCOMPLETE_experiment20,256,0.5,2,1,1024,4,1,20,Experiment 6 with double epoch
+../,MR,0.0001,2,100,MRCOMPLETE_experiment21,512,0.1,2,1,1024,4,1,21,Experiment 8 with double epoch
+../,MR,0.0001,2,100,MRCOMPLETE_experiment22,512,0.5,1,1,1024,4,1,22,Experiment 10 with double epoch
+../,MR,0.005,4,100,MRCOMPLETE_experiment23,512,0.5,2,1,1024,4,1,23,Experiment 4 with double epoch and higher learning rate
+../,MR,0.005,2,100,MRCOMPLETE_experiment24,256,0.5,2,1,1024,4,1,24,Experiment 6 with double epoch and higher learning rate
+../,MR,0.005,2,100,MRCOMPLETE_experiment25,512,0.1,2,1,1024,4,1,25,Experiment 8 with double epoch and higher learning rate
+../,MR,0.005,2,100,MRCOMPLETE_experiment26,512,0.5,1,1,1024,4,1,26,Experiment 10 with double epoch and higher learning rate
+../,MR,0.0001,8,100,MRCOMPLETE_experiment27,512,0.5,2,1,1024,4,1,27,Experiment 4 with double epoch doubled batch_size
+../,MR,0.0001,2,100,MRCOMPLETE_experiment28,128,0.5,2,1,1024,4,1,28,Experiment 6 with double epoch halfed sampled num
+../,MR,0.0001,2,100,MRCOMPLETE_experiment29,64,0.5,2,1,1024,4,1,29,Experiment 6 with double epoch halfed twice sampled num
+../,MR,0.0001,2,100,MRCOMPLETE_experiment30,512,0.5,0,1,1024,4,1,30,Experiment 10 with double epoch no hidden_layer
+../,MR,0.0001,4,100,MRCOMPLETE_experiment31,256,0.5,2,1,1024,4,1,31,Experiment 4 and 6 mixed with double epoch
