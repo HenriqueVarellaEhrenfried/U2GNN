@@ -1,0 +1,6 @@
+MR - Only train data
+MRCOMPLETE - Train and test data (I appended test to the end of train data)
+Experiments MR and MRCOMPLETE without version - Original version - 
+Experiments V2 - Original version without UNK nodes
+Experiments V3 - Original version with shuffled data
+
