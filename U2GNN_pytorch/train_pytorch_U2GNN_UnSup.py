@@ -38,6 +38,7 @@ parser.add_argument("--num_self_att_layers", default=1, type=int, help="Timestep
 parser.add_argument("--ff_hidden_size", default=1024, type=int, help="The hidden size for the feedforward layer")
 parser.add_argument("--num_neighbors", default=4, type=int, help="")
 parser.add_argument('--fold_idx', type=int, default=1, help='The fold index. 0-9.')
+parser.add_argument("--degree_as_tag", default='False', help="")
 args = parser.parse_args()
 
 print(args)
@@ -45,7 +46,7 @@ print(args)
 # Load data
 print("Loading data...")
 
-use_degree_as_tag = False
+use_degree_as_tag = True if args.degree_as_tag == 'True' or args.degree_as_tag == 'true' else False
 if args.dataset == 'COLLAB' or args.dataset == 'IMDBBINARY' or args.dataset == 'IMDBMULTI':
     use_degree_as_tag = True
 graphs, num_classes = load_data(args.dataset, use_degree_as_tag)

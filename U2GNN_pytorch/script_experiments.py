@@ -15,20 +15,21 @@ DATA_TYPES ={
         "ff_hidden_size":int,
         "num_neighbors":int,
         "fold_idx":int,
+        "degree_as_tag":str,
         "Experiment_Number":str,
         "Description":str
     }
 
 CSV_FILE = pd.read_csv(
-    'experiment_mrcomplete.csv', 
+    'experiment_degree_tag.csv', 
     header= 0, 
     dtype= DATA_TYPES   
 )
 
 CSV_SIZE = len(CSV_FILE["learning_rate"])
 
-CMD = "python train_pytorch_U2GNN_UnSup.py "
-
+# CMD = "python train_pytorch_U2GNN_UnSup.py "
+CMD = "echo python train_pytorch_U2GNN_UnSup.py "
 for i in range(0, CSV_SIZE):
     print(">>> Processing Experiment", i, "/", (CSV_SIZE-1), "<<<" )
     command = CMD \
@@ -44,7 +45,8 @@ for i in range(0, CSV_SIZE):
             + "--num_self_att_layers " + str(CSV_FILE["num_self_att_layers"][i]) + ' ' \
             + "--ff_hidden_size " + str(CSV_FILE["ff_hidden_size"][i]) + ' ' \
             + "--num_neighbors " + str(CSV_FILE["num_neighbors"][i]) + ' ' \
-            + "--fold_idx " + str(CSV_FILE["fold_idx"][i]) + ' '         
+            + "--fold_idx " + str(CSV_FILE["fold_idx"][i]) + ' '    \
+            + "--degree_as_tag " + str(CSV_FILE["degree_as_tag"][i])
     os.system(command)
 
 print("------------ Finished Processing ------------")
