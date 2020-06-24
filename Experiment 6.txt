@@ -1,0 +1,3 @@
+python train_pytorch_U2GNN_UnSup.py --run_folder ../ --dataset MR_WORD2VEC --learning_rate 0.0001 --batch_size 2 --num_epochs 50 --model_name MR_WORD2VEC_experiment6 --sampled_num 256 --dropout 0.5 --num_hidden_layers 2 --num_self_att_layers 1 --ff_hidden_size 1024 --num_neighbors 4 --fold_idx 1
+
+python train_pytorch_U2GNN_UnSup.py --run_folder ../ --dataset MR --learning_rate 0.0001 --batch_size 2 --num_epochs 50 --model_name TESTE_experiment6 --sampled_num 256 --dropout 0.5 --num_hidden_layers 2 --num_self_att_layers 1 --ff_hidden_size 1024 --num_neighbors 4 --fold_idx 1

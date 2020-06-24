@@ -16,12 +16,12 @@ from util import *
 from sklearn.linear_model import LogisticRegression
 import statistics
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-if torch.cuda.is_available():
-    print(">>>>>> CUDA Available!")
-    torch.cuda.manual_seed_all(123)
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# if torch.cuda.is_available():
+    # print(">>>>>> CUDA Available!")
+    # torch.cuda.manual_seed_all(123)
 
-# device = torch.device("cpu")
+device = torch.device("cpu")
 # Parameters
 # ==================================================
 
@@ -161,9 +161,12 @@ def train():
     for _ in range(num_batches_per_epoch):
         X_concat, input_x, input_y = batch_nodes()
         optimizer.zero_grad()
+
+        X_concat = X_concat.type(torch.FloatTensor)
+        X_concat = X_concat.to(device)
+
         input_x = input_x.type(torch.LongTensor)
         input_x = input_x.to(device)
-        print("X_concat, input_x, input_y >> ", X_concat.type(), input_x.type(), input_y.type())
         logits = model(X_concat, input_x, input_y)
         loss = torch.sum(logits)
         loss.backward()
