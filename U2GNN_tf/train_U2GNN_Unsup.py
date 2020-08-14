@@ -197,6 +197,7 @@ with tf.Graph().as_default():
                 X_concat, input_x, input_y = batch_nodes()
                 loss += train_step(X_concat, input_x, input_y)
                 # current_step = tf.compat.v1.train.global_step(sess, global_step)
+                break
             print(loss)
 
             # It will give tensor object
