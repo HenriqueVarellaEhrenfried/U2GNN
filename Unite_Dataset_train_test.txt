@@ -1,0 +1,11 @@
+cp MR_train.txt MR_GLOVE_D300.txt ; echo -e "" >> MR_GLOVE_D300.txt ; tail -n +2 MR_test.txt >> MR_GLOVE_D300.txt; sed -i "1s/.*/10621/" MR_GLOVE_D300.txt; wc -l *; head -n 2 MR_GLOVE_D300.txt
+____________________________________________________
+
+cp MR_train.txt MR_GLOVE_D300.txt 
+echo -e "" >> MR_GLOVE_D300.txt 
+tail -n +2 MR_test.txt >> MR_GLOVE_D300.txt
+sed -i "1s/.*/10621/" MR_GLOVE_D300.txt
+wc -l *
+head -n 2 MR_GLOVE_D300.txt
+
+
