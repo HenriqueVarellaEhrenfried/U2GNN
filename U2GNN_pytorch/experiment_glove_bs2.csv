@@ -1,0 +1,5 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,MR_GLOVE_D50,0.0001,2,100,MR_GLOVE_D50_BS2,512,0.5,2,1,1024,4,1,1,Node features 50
+../,MR_GLOVE_D100,0.0001,2,100,MR_GLOVE_D100_BS2,512,0.5,2,1,1024,4,1,1,Node features 100
+../,MR_GLOVE_D200,0.0001,2,100,MR_GLOVE_D200_BS2,512,0.5,2,1,1024,4,1,1,Node features 200
+../,MR_GLOVE_D300,0.0001,2,100,MR_GLOVE_D300_BS2,512,0.5,2,1,1024,4,1,1,Node features 300

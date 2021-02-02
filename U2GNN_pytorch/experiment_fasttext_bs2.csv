@@ -1,0 +1,5 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,MR-fasttext-d50,0.0001,2,100,MR-fasttext-d50_BS2,512,0.5,2,1,1024,4,1,1,Node features 50
+../,MR-fasttext-d100,0.0001,2,100,MR-fasttext-d100_BS2,512,0.5,2,1,1024,4,1,1,Node features 100
+../,MR-fasttext-d200,0.0001,2,100,MR-fasttext-d200_BS2,512,0.5,2,1,1024,4,1,1,Node features 200
+../,MR-fasttext-d300,0.0001,2,100,MR-fasttext-d300_BS2,512,0.5,2,1,1024,4,1,1,Node features 300
