@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import os
+
 torch.manual_seed(123)
 
 import numpy as np
@@ -19,11 +20,13 @@ import statistics
 
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # if torch.cuda.is_available():
+#     print(">>>>>> CUDA Available!")
 #     torch.cuda.manual_seed_all(123)
 
 torch.set_num_threads(os.cpu_count())
 device = torch.device("cpu")
 
+# device = torch.device("cpu")
 # Parameters
 # ==================================================
 
@@ -137,17 +140,25 @@ class Batch_Loader(object):
         return X_concat, input_x, input_y
 
 batch_nodes = Batch_Loader()
+def time_now():
+    t = time.localtime()
+    time_f = "[" + str(t.tm_hour) + ":" + str(t.tm_min) + ':' + str(t.tm_sec) + "] "
+    return(time_f)
+print(time_now(), "Loading data... finished!")
 
-print("Loading data... finished!")
-
+print(time_now(), "Create model")
 model = TransformerU2GNN(feature_dim_size=feature_dim_size, ff_hidden_size=args.ff_hidden_size,
                         dropout=args.dropout, num_self_att_layers=args.num_self_att_layers,
                         vocab_size=vocab_size, sampled_num=args.sampled_num,
                         num_U2GNN_layers=args.num_hidden_layers, device=device).to(device)
-
+print(time_now(), "Model Loaded")
 optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
+print(time_now(), "Optimizer created")
 num_batches_per_epoch = int((len(graphs) - 1) / args.batch_size) + 1
+print(time_now(), "Setted num_batches_per_epoch equal to ", num_batches_per_epoch)
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=num_batches_per_epoch, gamma=0.1)
+print(time_now(), "Scheduler created")
+
 
 def train():
     model.train() # Turn on the train mode
@@ -155,6 +166,12 @@ def train():
     for _ in range(num_batches_per_epoch):
         X_concat, input_x, input_y = batch_nodes()
         optimizer.zero_grad()
+
+        X_concat = X_concat.type(torch.FloatTensor)
+        X_concat = X_concat.to(device)
+
+        input_x = input_x.type(torch.LongTensor)
+        input_x = input_x.to(device)
         logits = model(X_concat, input_x, input_y)
         loss = torch.sum(logits)
         loss.backward()
@@ -193,7 +210,7 @@ def evaluate():
 """main process"""
 import os
 out_dir = os.path.abspath(os.path.join(args.run_folder, "../runs_pytorch_U2GNN_UnSup", args.model_name))
-print("Writing to {}\n".format(out_dir))
+print(time_now(), "Writing to {}\n".format(out_dir))
 # Checkpoint directory
 checkpoint_dir = os.path.abspath(os.path.join(out_dir, "checkpoints"))
 checkpoint_prefix = os.path.join(checkpoint_dir, "model")
@@ -202,9 +219,13 @@ if not os.path.exists(checkpoint_dir):
 write_acc = open(checkpoint_prefix + '_acc.txt', 'w')
 
 cost_loss = []
+print(time_now(),"Antes do loop de epocas")
 for epoch in range(1, args.num_epochs + 1):
+    print(time_now(), 'Epoch', epoch, ' started')
     epoch_start_time = time.time()
+    print(time_now(), "It will start to train")
     train_loss = train()
+    print(time_now(), "Finished Train")
     cost_loss.append(train_loss)
     mean_10folds, std_10folds = evaluate()
     print('| epoch {:3d} | time: {:5.2f}s | loss {:5.2f} | mean {:5.2f} | std {:5.2f} | '.format(

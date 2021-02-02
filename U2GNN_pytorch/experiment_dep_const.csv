@@ -1,0 +1,2 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,MR-DEP-CONST,0.0001,2,100,MR_experiment_dep_const,512,0.5,2,1,1024,4,1,0,Default config DEP

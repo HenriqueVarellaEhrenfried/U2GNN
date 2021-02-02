@@ -20,14 +20,15 @@ DATA_TYPES ={
     }
 
 CSV_FILE = pd.read_csv(
-    'experiment_mrcomplete.csv', 
+    'experiment_NOVO_Dep_Cluster.csv', 
     header= 0, 
     dtype= DATA_TYPES   
 )
 
 CSV_SIZE = len(CSV_FILE["learning_rate"])
 
-CMD = "python train_pytorch_U2GNN_UnSup.py "
+# CMD = "python train_pytorch_U2GNN_UnSup.py "
+CMD = "python unsup_train_alternative.py "
 
 for i in range(0, CSV_SIZE):
     print(">>> Processing Experiment", i, "/", (CSV_SIZE-1), "<<<" )

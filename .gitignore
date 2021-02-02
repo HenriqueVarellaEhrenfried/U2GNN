@@ -1,2 +1,10 @@
 env/
 U2GNN_pytorch/log_uniform/
+dataset/
+U2GNN_pytorch/__pycache__/
+U2GNN_tf/__pycache__/
+env-desktop/
+env-predator/
+U2GNN_pytorch/log_uniform/*
+U2GNN_pytorch/__pycache__/*
+U2GNN_pytorch/log_uniform/log_uniform.cpp

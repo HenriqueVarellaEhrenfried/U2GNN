@@ -1,0 +1,4 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,MR-DEP-CONST-NOVO,0.0001,128,100,MR_experiment_dep_const_novo_correto,512,0.5,2,1,1024,4,1,0,Default config DEP CONST
+../,MR-DEP-NOVO,0.0001,128,100,MR_experiment_dep_novo_correto,512,0.5,2,1,1024,4,1,1,Default config DEP
+../,MR-CONST-NOVO,0.0001,128,100,MR_experiment_const_novo_correto,512,0.5,2,1,1024,4,1,2,Default config CONST

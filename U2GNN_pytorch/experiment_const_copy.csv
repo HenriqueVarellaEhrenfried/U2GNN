@@ -1,0 +1,4 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,mr_test_const,0.005,2,2,MR_experiment0,512,0.5,2,1,1024,4,1,0,Default config
+../,mr_test_const_dep,0.005,2,2,MR_experiment1,512,0.5,2,1,1024,4,1,0,Default config
+../,mr_test_dep,0.005,2,2,MR_experiment2,512,0.5,2,1,1024,4,1,0,Default config

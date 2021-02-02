@@ -101,6 +101,8 @@ def load_data(dataset, degree_as_tag):
 
         deg_list = list(dict(g.g.degree(range(len(g.g)))).values())
 
+        # print("\n\n LEN(EDGES)",len(edges))
+        # print("EDGES > ", edges)
         g.edge_mat = np.transpose(np.array(edges, dtype=np.int32), (1,0))
 
     if degree_as_tag:
