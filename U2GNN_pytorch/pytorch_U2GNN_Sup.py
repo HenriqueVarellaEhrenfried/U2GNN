@@ -32,7 +32,7 @@ class TransformerU2GNN(nn.Module):
         input_x = input_x.long()
         input_Tr = F.embedding(input_x, X_concat)
         for layer_idx in range(self.num_U2GNN_layers):
-            #
+            input_Tr = input_Tr.float()
             output_Tr = self.u2gnn_layers[layer_idx](input_Tr)
             output_Tr = torch.split(output_Tr, split_size_or_sections=1, dim=1)[0]
             output_Tr = torch.squeeze(output_Tr, dim=1)
