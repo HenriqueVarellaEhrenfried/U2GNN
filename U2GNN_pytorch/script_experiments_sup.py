@@ -20,7 +20,7 @@ DATA_TYPES ={
     }
 
 CSV_FILE = pd.read_csv(
-    'MR_Spacy.csv', 
+    'Supervised_MR_Ohsumed.csv', 
     header= 0, 
     dtype= DATA_TYPES   
 )

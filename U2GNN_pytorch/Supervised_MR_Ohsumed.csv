@@ -1,0 +1,3 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,MR-DEP-SPACY,0.0001,128,100,Sup_MR-DEP-SPACY_BS64-Sampled-512,512,0.5,2,1,1024,4,1,1,Default config DEP SPACY BS 128
+../,Ohsumed-DEP-SPACY,0.0001,128,100,Sup_Ohsumed-DEP-SPACY_BS64-Sampled-512,512,0.5,2,1,1024,4,1,1,Default config DEP Ohsumed BS 128
