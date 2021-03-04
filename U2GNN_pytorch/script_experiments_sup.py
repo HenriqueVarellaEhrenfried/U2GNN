@@ -27,7 +27,7 @@ CSV_FILE = pd.read_csv(
 
 CSV_SIZE = len(CSV_FILE["learning_rate"])
 
-CMD = "python train_pytorch_U2GNN_UnSup.py "
+CMD = "python train_pytorch_U2GNN_Sup.py "
 # CMD = "python unsup_train_alternative.py "
 
 for i in range(0, CSV_SIZE):

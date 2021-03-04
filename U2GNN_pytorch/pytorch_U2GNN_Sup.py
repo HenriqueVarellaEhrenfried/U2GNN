@@ -29,6 +29,7 @@ class TransformerU2GNN(nn.Module):
 
     def forward(self, input_x, graph_pool, X_concat):
         prediction_scores = 0
+        input_x = input_x.long()
         input_Tr = F.embedding(input_x, X_concat)
         for layer_idx in range(self.num_U2GNN_layers):
             #
@@ -54,7 +55,19 @@ def label_smoothing(true_labels: torch.Tensor, classes: int, smoothing=0.1):
     confidence = 1.0 - smoothing
     label_shape = torch.Size((true_labels.size(0), classes))
     with torch.no_grad():
-        true_dist = torch.empty(size=label_shape, device=true_labels.device)
+        # true_dist = torch.empty(size=label_shape, device=true_labels.device)
+        true_dist = torch.empty(size=label_shape)
         true_dist.fill_(smoothing / (classes - 1))
-        true_dist.scatter_(1, true_labels.data.unsqueeze(1), confidence)
+
+        true_labels = true_labels.to("cpu")
+        true_labels = true_labels.data.unsqueeze(1).long()
+        unsqueezed_true_labels = torch.LongTensor(true_labels)
+
+        # true_dist.scatter_(1, true_labels.data.unsqueeze(1), confidence)
+        true_dist.scatter_(1,unsqueezed_true_labels, confidence)
     return true_dist
+
+## Tensorflow function
+# def label_smoothing(inputs, epsilon=0.1):
+#     V = inputs.get_shape().as_list()[-1]  # number of channels
+#     return ((1 - epsilon) * inputs) + (epsilon / V)

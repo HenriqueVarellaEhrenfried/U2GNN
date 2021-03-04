@@ -17,13 +17,13 @@ from util import *
 from sklearn.linear_model import LogisticRegression
 import statistics
 
-# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-# if torch.cuda.is_available():
-    # print(">>>>>> CUDA Available!")
-    # torch.cuda.manual_seed_all(123)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if torch.cuda.is_available():
+    print(">>>>>> CUDA Available!")
+    torch.cuda.manual_seed_all(123)
 
-torch.set_num_threads(os.cpu_count())
-device = torch.device("cpu")
+# torch.set_num_threads(os.cpu_count())
+# device = torch.device("cpu")
 
 # Parameters
 # ==================================================
@@ -98,6 +98,7 @@ graph_indices = graph_pool._indices()[0]
 vocab_size=graph_pool.size()[1]
 
 def get_idx_nodes(selected_graph_idx):
+    # Get the nodes from graphs with ID in [selected_graph_idx]
     idx_nodes = [torch.where(graph_indices==i)[0] for i in selected_graph_idx]
     idx_nodes = torch.cat(idx_nodes)
     return idx_nodes.to(device)
@@ -171,6 +172,8 @@ def train():
         input_x = input_x.type(torch.LongTensor)
         input_x = input_x.to(device)
         logits = model(X_concat, input_x, input_y)
+        # loss = torch.abs(torch.sum(logits))
+        # loss = torch.abs(torch.lgamma(torch.sum(logits)))
         loss = torch.sum(logits)
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 0.5)

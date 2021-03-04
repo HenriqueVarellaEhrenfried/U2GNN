@@ -38,7 +38,6 @@ class SampledSoftmax(nn.Module):
 
         batch_size, d = inputs.size()
         sample_ids, true_freq, sample_freq = sample_values
-
         sample_ids = Variable(torch.LongTensor(sample_ids)).to(self.device)
 
         # gather true labels
@@ -52,5 +51,11 @@ class SampledSoftmax(nn.Module):
         sample_logits = torch.exp(torch.matmul(inputs, torch.t(sample_weights)))
 
         logits = -torch.log(true_logits / torch.sum(sample_logits, dim=1))
+        # sumlogits = torch.sum(logits)
+        # try :
+        #     if torch.sum(logits).item() < 0:
+        #         raise ValueError
+        # except ValueError:
+        #     print(logits)
 
         return logits

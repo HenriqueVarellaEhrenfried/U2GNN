@@ -139,6 +139,7 @@ model = TransformerU2GNN(feature_dim_size=feature_dim_size, ff_hidden_size=args.
 
 def cross_entropy(pred, soft_targets): # use nn.CrossEntropyLoss if not using soft labels in Line 159
     logsoftmax = nn.LogSoftmax(dim=1)
+    soft_targets= soft_targets.to(device)
     return torch.mean(torch.sum(- soft_targets * logsoftmax(pred), 1))
 
 # criterion = nn.CrossEntropyLoss()

@@ -1,0 +1,2 @@
+run_folder,dataset,learning_rate,batch_size,num_epochs,model_name,sampled_num,dropout,num_hidden_layers,num_self_att_layers,ff_hidden_size,num_neighbors,fold_idx,Experiment_Number,Description
+../,mr_test_dep,0.0001,128,100,MR-DEP-TEST-SPACY_BS64-Sampled-65536,65536,0.5,2,1,1024,4,1,1,Default config DEP SPACY BS 2

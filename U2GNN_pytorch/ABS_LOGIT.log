@@ -1,0 +1,1419 @@
+>>>>>> CUDA Available!
+Namespace(batch_size=64, dataset='mr_test_dep', dropout=0.5, ff_hidden_size=1024, fold_idx=1, learning_rate=0.0001, model_name='ABS-MR-DEP-TEST-SPACY_BS64', num_epochs=100, num_hidden_layers=2, num_neighbors=4, num_self_att_layers=1, run_folder='../', sampled_num=512)
+Loading data...
+loading data
+# classes: 2
+# maximum node tag: 1
+# data: 3537
+300
+[15:25:9]  Loading data... finished!
+[15:25:9]  Create model
+[15:25:9]  Model Loaded
+[15:25:9]  Optimizer created
+[15:25:9]  Setted num_batches_per_epoch equal to  56
+[15:25:9]  Scheduler created
+[15:25:9]  Writing to /media/hvehrenfried/HD Externo/Arquivos Doutorado/PhD-Current/runs_pytorch_U2GNN_UnSup/ABS-MR-DEP-TEST-SPACY_BS64
+
+[15:25:9]  Antes do loop de epocas
+[15:25:9]  Epoch 1  started
+[15:25:9]  It will start to train
+[15:25:14]  Finished Train
+epoch  1  fold  0  acc  0.4830508474576271
+epoch  1  fold  1  acc  0.519774011299435
+epoch  1  fold  2  acc  0.5225988700564972
+epoch  1  fold  3  acc  0.5112994350282486
+epoch  1  fold  4  acc  0.5677966101694916
+epoch  1  fold  5  acc  0.4943502824858757
+epoch  1  fold  6  acc  0.4774011299435028
+epoch  1  fold  7  acc  0.46742209631728043
+epoch  1  fold  8  acc  0.5184135977337111
+epoch  1  fold  9  acc  0.45042492917847027
+| epoch   1 | time:  5.23s | loss 456911.44 | mean 50.13 | std  3.38 | 
+[15:25:15]  Epoch 2  started
+[15:25:15]  It will start to train
+[15:25:19]  Finished Train
+epoch  2  fold  0  acc  0.4887005649717514
+epoch  2  fold  1  acc  0.5084745762711864
+epoch  2  fold  2  acc  0.5225988700564972
+epoch  2  fold  3  acc  0.5225988700564972
+epoch  2  fold  4  acc  0.5621468926553672
+epoch  2  fold  5  acc  0.5
+epoch  2  fold  6  acc  0.4915254237288136
+epoch  2  fold  7  acc  0.48158640226628896
+epoch  2  fold  8  acc  0.5240793201133145
+epoch  2  fold  9  acc  0.48158640226628896
+| epoch   2 | time:  5.23s | loss 428457.83 | mean 50.83 | std  2.52 | 
+[15:25:20]  Epoch 3  started
+[15:25:20]  It will start to train
+[15:25:24]  Finished Train
+epoch  3  fold  0  acc  0.5056497175141242
+epoch  3  fold  1  acc  0.5169491525423728
+epoch  3  fold  2  acc  0.5282485875706214
+epoch  3  fold  3  acc  0.5225988700564972
+epoch  3  fold  4  acc  0.5423728813559322
+epoch  3  fold  5  acc  0.5225988700564972
+epoch  3  fold  6  acc  0.4830508474576271
+epoch  3  fold  7  acc  0.5070821529745042
+epoch  3  fold  8  acc  0.546742209631728
+epoch  3  fold  9  acc  0.4730878186968839
+| epoch   3 | time:  5.34s | loss 420147.09 | mean 51.48 | std  2.35 | 
+[15:25:25]  Epoch 4  started
+[15:25:25]  It will start to train
+[15:25:30]  Finished Train
+epoch  4  fold  0  acc  0.5141242937853108
+epoch  4  fold  1  acc  0.5282485875706214
+epoch  4  fold  2  acc  0.5028248587570622
+epoch  4  fold  3  acc  0.5508474576271186
+epoch  4  fold  4  acc  0.5734463276836158
+epoch  4  fold  5  acc  0.5451977401129944
+epoch  4  fold  6  acc  0.5
+epoch  4  fold  7  acc  0.5042492917847026
+epoch  4  fold  8  acc  0.5552407932011332
+epoch  4  fold  9  acc  0.5070821529745042
+| epoch   4 | time:  5.31s | loss 414903.85 | mean 52.81 | std  2.63 | 
+[15:25:31]  Epoch 5  started
+[15:25:31]  It will start to train
+[15:25:35]  Finished Train
+epoch  5  fold  0  acc  0.5451977401129944
+epoch  5  fold  1  acc  0.5480225988700564
+epoch  5  fold  2  acc  0.5112994350282486
+epoch  5  fold  3  acc  0.5536723163841808
+epoch  5  fold  4  acc  0.5932203389830508
+epoch  5  fold  5  acc  0.5677966101694916
+epoch  5  fold  6  acc  0.5338983050847458
+epoch  5  fold  7  acc  0.5325779036827195
+epoch  5  fold  8  acc  0.5694050991501416
+epoch  5  fold  9  acc  0.5552407932011332
+| epoch   5 | time:  5.27s | loss 404361.97 | mean 55.10 | std  2.28 | 
+[15:25:36]  Epoch 6  started
+[15:25:36]  It will start to train
+[15:25:40]  Finished Train
+epoch  6  fold  0  acc  0.5536723163841808
+epoch  6  fold  1  acc  0.5649717514124294
+epoch  6  fold  2  acc  0.5480225988700564
+epoch  6  fold  3  acc  0.5649717514124294
+epoch  6  fold  4  acc  0.615819209039548
+epoch  6  fold  5  acc  0.6016949152542372
+epoch  6  fold  6  acc  0.5677966101694916
+epoch  6  fold  7  acc  0.5835694050991501
+epoch  6  fold  8  acc  0.5949008498583569
+epoch  6  fold  9  acc  0.5722379603399433
+| epoch   6 | time:  5.37s | loss 396157.02 | mean 57.68 | std  2.18 | 
+[15:25:41]  Epoch 7  started
+[15:25:41]  It will start to train
+[15:25:46]  Finished Train
+epoch  7  fold  0  acc  0.596045197740113
+epoch  7  fold  1  acc  0.5875706214689266
+epoch  7  fold  2  acc  0.5423728813559322
+epoch  7  fold  3  acc  0.6129943502824858
+epoch  7  fold  4  acc  0.632768361581921
+epoch  7  fold  5  acc  0.6412429378531074
+epoch  7  fold  6  acc  0.596045197740113
+epoch  7  fold  7  acc  0.5892351274787535
+epoch  7  fold  8  acc  0.6005665722379604
+epoch  7  fold  9  acc  0.5920679886685553
+| epoch   7 | time:  5.33s | loss 381441.86 | mean 59.91 | std  2.71 | 
+[15:25:47]  Epoch 8  started
+[15:25:47]  It will start to train
+[15:25:51]  Finished Train
+epoch  8  fold  0  acc  0.6214689265536724
+epoch  8  fold  1  acc  0.6045197740112994
+epoch  8  fold  2  acc  0.5536723163841808
+epoch  8  fold  3  acc  0.6214689265536724
+epoch  8  fold  4  acc  0.6440677966101694
+epoch  8  fold  5  acc  0.6751412429378532
+epoch  8  fold  6  acc  0.6271186440677966
+epoch  8  fold  7  acc  0.623229461756374
+epoch  8  fold  8  acc  0.6175637393767706
+epoch  8  fold  9  acc  0.6175637393767706
+| epoch   8 | time:  5.44s | loss 371416.41 | mean 62.06 | std  3.04 | 
+[15:25:52]  Epoch 9  started
+[15:25:52]  It will start to train
+[15:25:56]  Finished Train
+epoch  9  fold  0  acc  0.6440677966101694
+epoch  9  fold  1  acc  0.6271186440677966
+epoch  9  fold  2  acc  0.5903954802259888
+epoch  9  fold  3  acc  0.6610169491525424
+epoch  9  fold  4  acc  0.655367231638418
+epoch  9  fold  5  acc  0.6807909604519774
+epoch  9  fold  6  acc  0.6412429378531074
+epoch  9  fold  7  acc  0.6288951841359773
+epoch  9  fold  8  acc  0.6458923512747875
+epoch  9  fold  9  acc  0.6487252124645893
+| epoch   9 | time:  5.43s | loss 356685.16 | mean 64.24 | std  2.40 | 
+[15:25:57]  Epoch 10  started
+[15:25:57]  It will start to train
+[15:26:2]  Finished Train
+epoch  10  fold  0  acc  0.6610169491525424
+epoch  10  fold  1  acc  0.655367231638418
+epoch  10  fold  2  acc  0.6101694915254238
+epoch  10  fold  3  acc  0.672316384180791
+epoch  10  fold  4  acc  0.6779661016949152
+epoch  10  fold  5  acc  0.6864406779661016
+epoch  10  fold  6  acc  0.6581920903954802
+epoch  10  fold  7  acc  0.6487252124645893
+epoch  10  fold  8  acc  0.6657223796033994
+epoch  10  fold  9  acc  0.6685552407932012
+| epoch  10 | time:  5.54s | loss 347102.20 | mean 66.04 | std  2.09 | 
+[15:26:3]  Epoch 11  started
+[15:26:3]  It will start to train
+[15:26:7]  Finished Train
+epoch  11  fold  0  acc  0.6694915254237288
+epoch  11  fold  1  acc  0.672316384180791
+epoch  11  fold  2  acc  0.6214689265536724
+epoch  11  fold  3  acc  0.6836158192090396
+epoch  11  fold  4  acc  0.692090395480226
+epoch  11  fold  5  acc  0.7062146892655368
+epoch  11  fold  6  acc  0.655367231638418
+epoch  11  fold  7  acc  0.6685552407932012
+epoch  11  fold  8  acc  0.6572237960339944
+epoch  11  fold  9  acc  0.6742209631728046
+| epoch  11 | time:  5.61s | loss 331230.52 | mean 67.01 | std  2.30 | 
+[15:26:9]  Epoch 12  started
+[15:26:9]  It will start to train
+[15:26:13]  Finished Train
+epoch  12  fold  0  acc  0.672316384180791
+epoch  12  fold  1  acc  0.6836158192090396
+epoch  12  fold  2  acc  0.632768361581921
+epoch  12  fold  3  acc  0.7062146892655368
+epoch  12  fold  4  acc  0.7062146892655368
+epoch  12  fold  5  acc  0.7231638418079096
+epoch  12  fold  6  acc  0.6694915254237288
+epoch  12  fold  7  acc  0.6770538243626062
+epoch  12  fold  8  acc  0.6770538243626062
+epoch  12  fold  9  acc  0.6883852691218131
+| epoch  12 | time:  5.71s | loss 315370.22 | mean 68.36 | std  2.50 | 
+[15:26:14]  Epoch 13  started
+[15:26:14]  It will start to train
+[15:26:19]  Finished Train
+epoch  13  fold  0  acc  0.6694915254237288
+epoch  13  fold  1  acc  0.692090395480226
+epoch  13  fold  2  acc  0.655367231638418
+epoch  13  fold  3  acc  0.7062146892655368
+epoch  13  fold  4  acc  0.7090395480225988
+epoch  13  fold  5  acc  0.7344632768361582
+epoch  13  fold  6  acc  0.7005649717514124
+epoch  13  fold  7  acc  0.6968838526912181
+epoch  13  fold  8  acc  0.7110481586402266
+epoch  13  fold  9  acc  0.7082152974504249
+| epoch  13 | time:  6.13s | loss 300273.65 | mean 69.83 | std  2.23 | 
+[15:26:20]  Epoch 14  started
+[15:26:20]  It will start to train
+[15:26:25]  Finished Train
+epoch  14  fold  0  acc  0.6751412429378532
+epoch  14  fold  1  acc  0.6949152542372882
+epoch  14  fold  2  acc  0.6638418079096046
+epoch  14  fold  3  acc  0.6977401129943502
+epoch  14  fold  4  acc  0.7231638418079096
+epoch  14  fold  5  acc  0.748587570621469
+epoch  14  fold  6  acc  0.7259887005649718
+epoch  14  fold  7  acc  0.7223796033994334
+epoch  14  fold  8  acc  0.71671388101983
+epoch  14  fold  9  acc  0.71671388101983
+| epoch  14 | time:  5.83s | loss 287160.37 | mean 70.85 | std  2.55 | 
+[15:26:26]  Epoch 15  started
+[15:26:26]  It will start to train
+[15:26:31]  Finished Train
+epoch  15  fold  0  acc  0.672316384180791
+epoch  15  fold  1  acc  0.6892655367231638
+epoch  15  fold  2  acc  0.6836158192090396
+epoch  15  fold  3  acc  0.7062146892655368
+epoch  15  fold  4  acc  0.7288135593220338
+epoch  15  fold  5  acc  0.7542372881355932
+epoch  15  fold  6  acc  0.7429378531073446
+epoch  15  fold  7  acc  0.7195467422096318
+epoch  15  fold  8  acc  0.7195467422096318
+epoch  15  fold  9  acc  0.7223796033994334
+| epoch  15 | time:  5.93s | loss 272456.73 | mean 71.39 | std  2.61 | 
+[15:26:32]  Epoch 16  started
+[15:26:32]  It will start to train
+[15:26:37]  Finished Train
+epoch  16  fold  0  acc  0.6864406779661016
+epoch  16  fold  1  acc  0.7005649717514124
+epoch  16  fold  2  acc  0.6807909604519774
+epoch  16  fold  3  acc  0.7090395480225988
+epoch  16  fold  4  acc  0.7457627118644068
+epoch  16  fold  5  acc  0.751412429378531
+epoch  16  fold  6  acc  0.7457627118644068
+epoch  16  fold  7  acc  0.7393767705382436
+epoch  16  fold  8  acc  0.7365439093484419
+epoch  16  fold  9  acc  0.7337110481586402
+| epoch  16 | time:  5.99s | loss 256243.39 | mean 72.29 | std  2.63 | 
+[15:26:38]  Epoch 17  started
+[15:26:38]  It will start to train
+[15:26:43]  Finished Train
+epoch  17  fold  0  acc  0.692090395480226
+epoch  17  fold  1  acc  0.7062146892655368
+epoch  17  fold  2  acc  0.6807909604519774
+epoch  17  fold  3  acc  0.7203389830508474
+epoch  17  fold  4  acc  0.7429378531073446
+epoch  17  fold  5  acc  0.7542372881355932
+epoch  17  fold  6  acc  0.7457627118644068
+epoch  17  fold  7  acc  0.7393767705382436
+epoch  17  fold  8  acc  0.7365439093484419
+epoch  17  fold  9  acc  0.7450424929178471
+| epoch  17 | time:  6.01s | loss 240439.48 | mean 72.63 | std  2.53 | 
+[15:26:44]  Epoch 18  started
+[15:26:44]  It will start to train
+[15:26:49]  Finished Train
+epoch  18  fold  0  acc  0.6949152542372882
+epoch  18  fold  1  acc  0.7203389830508474
+epoch  18  fold  2  acc  0.6949152542372882
+epoch  18  fold  3  acc  0.7288135593220338
+epoch  18  fold  4  acc  0.7429378531073446
+epoch  18  fold  5  acc  0.7598870056497176
+epoch  18  fold  6  acc  0.7598870056497176
+epoch  18  fold  7  acc  0.7393767705382436
+epoch  18  fold  8  acc  0.7365439093484419
+epoch  18  fold  9  acc  0.7478753541076487
+| epoch  18 | time:  6.10s | loss 227037.14 | mean 73.25 | std  2.33 | 
+[15:26:50]  Epoch 19  started
+[15:26:50]  It will start to train
+[15:26:55]  Finished Train
+epoch  19  fold  0  acc  0.6949152542372882
+epoch  19  fold  1  acc  0.7231638418079096
+epoch  19  fold  2  acc  0.7033898305084746
+epoch  19  fold  3  acc  0.7175141242937854
+epoch  19  fold  4  acc  0.7401129943502824
+epoch  19  fold  5  acc  0.7570621468926554
+epoch  19  fold  6  acc  0.748587570621469
+epoch  19  fold  7  acc  0.7308781869688386
+epoch  19  fold  8  acc  0.7337110481586402
+epoch  19  fold  9  acc  0.7592067988668555
+| epoch  19 | time:  6.08s | loss 214575.01 | mean 73.09 | std  2.16 | 
+[15:26:56]  Epoch 20  started
+[15:26:56]  It will start to train
+[15:27:1]  Finished Train
+epoch  20  fold  0  acc  0.6977401129943502
+epoch  20  fold  1  acc  0.7344632768361582
+epoch  20  fold  2  acc  0.7033898305084746
+epoch  20  fold  3  acc  0.711864406779661
+epoch  20  fold  4  acc  0.7372881355932204
+epoch  20  fold  5  acc  0.7627118644067796
+epoch  20  fold  6  acc  0.7570621468926554
+epoch  20  fold  7  acc  0.7280453257790368
+epoch  20  fold  8  acc  0.7422096317280453
+epoch  20  fold  9  acc  0.773371104815864
+| epoch  20 | time:  6.15s | loss 196923.19 | mean 73.48 | std  2.53 | 
+[15:27:3]  Epoch 21  started
+[15:27:3]  It will start to train
+[15:27:7]  Finished Train
+epoch  21  fold  0  acc  0.6949152542372882
+epoch  21  fold  1  acc  0.7372881355932204
+epoch  21  fold  2  acc  0.711864406779661
+epoch  21  fold  3  acc  0.7175141242937854
+epoch  21  fold  4  acc  0.7344632768361582
+epoch  21  fold  5  acc  0.7570621468926554
+epoch  21  fold  6  acc  0.7570621468926554
+epoch  21  fold  7  acc  0.7365439093484419
+epoch  21  fold  8  acc  0.7365439093484419
+epoch  21  fold  9  acc  0.773371104815864
+| epoch  21 | time:  6.14s | loss 184304.17 | mean 73.57 | std  2.33 | 
+[15:27:9]  Epoch 22  started
+[15:27:9]  It will start to train
+[15:27:13]  Finished Train
+epoch  22  fold  0  acc  0.7033898305084746
+epoch  22  fold  1  acc  0.7401129943502824
+epoch  22  fold  2  acc  0.7203389830508474
+epoch  22  fold  3  acc  0.7231638418079096
+epoch  22  fold  4  acc  0.7457627118644068
+epoch  22  fold  5  acc  0.7598870056497176
+epoch  22  fold  6  acc  0.7598870056497176
+epoch  22  fold  7  acc  0.7422096317280453
+epoch  22  fold  8  acc  0.7478753541076487
+epoch  22  fold  9  acc  0.7648725212464589
+| epoch  22 | time:  6.18s | loss 174785.01 | mean 74.07 | std  1.98 | 
+[15:27:15]  Epoch 23  started
+[15:27:15]  It will start to train
+[15:27:19]  Finished Train
+epoch  23  fold  0  acc  0.7005649717514124
+epoch  23  fold  1  acc  0.7401129943502824
+epoch  23  fold  2  acc  0.7288135593220338
+epoch  23  fold  3  acc  0.731638418079096
+epoch  23  fold  4  acc  0.7457627118644068
+epoch  23  fold  5  acc  0.7542372881355932
+epoch  23  fold  6  acc  0.7598870056497176
+epoch  23  fold  7  acc  0.7393767705382436
+epoch  23  fold  8  acc  0.7507082152974505
+epoch  23  fold  9  acc  0.7648725212464589
+| epoch  23 | time:  6.28s | loss 162081.23 | mean 74.16 | std  1.85 | 
+[15:27:21]  Epoch 24  started
+[15:27:21]  It will start to train
+[15:27:25]  Finished Train
+epoch  24  fold  0  acc  0.7062146892655368
+epoch  24  fold  1  acc  0.7372881355932204
+epoch  24  fold  2  acc  0.7372881355932204
+epoch  24  fold  3  acc  0.731638418079096
+epoch  24  fold  4  acc  0.748587570621469
+epoch  24  fold  5  acc  0.7598870056497176
+epoch  24  fold  6  acc  0.7627118644067796
+epoch  24  fold  7  acc  0.7337110481586402
+epoch  24  fold  8  acc  0.7478753541076487
+epoch  24  fold  9  acc  0.7648725212464589
+| epoch  24 | time:  6.18s | loss 148203.13 | mean 74.30 | std  1.78 | 
+[15:27:27]  Epoch 25  started
+[15:27:27]  It will start to train
+[15:27:32]  Finished Train
+epoch  25  fold  0  acc  0.7146892655367232
+epoch  25  fold  1  acc  0.7457627118644068
+epoch  25  fold  2  acc  0.7372881355932204
+epoch  25  fold  3  acc  0.7259887005649718
+epoch  25  fold  4  acc  0.751412429378531
+epoch  25  fold  5  acc  0.7598870056497176
+epoch  25  fold  6  acc  0.7570621468926554
+epoch  25  fold  7  acc  0.7393767705382436
+epoch  25  fold  8  acc  0.7450424929178471
+epoch  25  fold  9  acc  0.7620396600566572
+| epoch  25 | time:  6.24s | loss 143648.37 | mean 74.39 | std  1.51 | 
+[15:27:34]  Epoch 26  started
+[15:27:34]  It will start to train
+[15:27:38]  Finished Train
+epoch  26  fold  0  acc  0.7090395480225988
+epoch  26  fold  1  acc  0.7429378531073446
+epoch  26  fold  2  acc  0.7372881355932204
+epoch  26  fold  3  acc  0.731638418079096
+epoch  26  fold  4  acc  0.751412429378531
+epoch  26  fold  5  acc  0.7598870056497176
+epoch  26  fold  6  acc  0.7627118644067796
+epoch  26  fold  7  acc  0.7620396600566572
+epoch  26  fold  8  acc  0.7535410764872521
+epoch  26  fold  9  acc  0.7592067988668555
+| epoch  26 | time:  6.32s | loss 129560.00 | mean 74.70 | std  1.71 | 
+[15:27:40]  Epoch 27  started
+[15:27:40]  It will start to train
+[15:27:44]  Finished Train
+epoch  27  fold  0  acc  0.7033898305084746
+epoch  27  fold  1  acc  0.7457627118644068
+epoch  27  fold  2  acc  0.7372881355932204
+epoch  27  fold  3  acc  0.7344632768361582
+epoch  27  fold  4  acc  0.751412429378531
+epoch  27  fold  5  acc  0.7598870056497176
+epoch  27  fold  6  acc  0.7711864406779662
+epoch  27  fold  7  acc  0.7563739376770539
+epoch  27  fold  8  acc  0.7478753541076487
+epoch  27  fold  9  acc  0.7620396600566572
+| epoch  27 | time:  6.26s | loss 120377.36 | mean 74.70 | std  1.90 | 
+[15:27:46]  Epoch 28  started
+[15:27:46]  It will start to train
+[15:27:50]  Finished Train
+epoch  28  fold  0  acc  0.711864406779661
+epoch  28  fold  1  acc  0.731638418079096
+epoch  28  fold  2  acc  0.731638418079096
+epoch  28  fold  3  acc  0.7429378531073446
+epoch  28  fold  4  acc  0.7542372881355932
+epoch  28  fold  5  acc  0.7627118644067796
+epoch  28  fold  6  acc  0.768361581920904
+epoch  28  fold  7  acc  0.7592067988668555
+epoch  28  fold  8  acc  0.7535410764872521
+epoch  28  fold  9  acc  0.7648725212464589
+| epoch  28 | time:  6.34s | loss 115840.29 | mean 74.81 | std  1.82 | 
+[15:27:52]  Epoch 29  started
+[15:27:52]  It will start to train
+[15:27:57]  Finished Train
+epoch  29  fold  0  acc  0.711864406779661
+epoch  29  fold  1  acc  0.7288135593220338
+epoch  29  fold  2  acc  0.731638418079096
+epoch  29  fold  3  acc  0.7344632768361582
+epoch  29  fold  4  acc  0.7542372881355932
+epoch  29  fold  5  acc  0.7627118644067796
+epoch  29  fold  6  acc  0.768361581920904
+epoch  29  fold  7  acc  0.7648725212464589
+epoch  29  fold  8  acc  0.7535410764872521
+epoch  29  fold  9  acc  0.7648725212464589
+| epoch  29 | time:  6.40s | loss 109167.50 | mean 74.75 | std  1.94 | 
+[15:27:59]  Epoch 30  started
+[15:27:59]  It will start to train
+[15:28:3]  Finished Train
+epoch  30  fold  0  acc  0.7090395480225988
+epoch  30  fold  1  acc  0.7259887005649718
+epoch  30  fold  2  acc  0.7401129943502824
+epoch  30  fold  3  acc  0.7288135593220338
+epoch  30  fold  4  acc  0.7627118644067796
+epoch  30  fold  5  acc  0.768361581920904
+epoch  30  fold  6  acc  0.7655367231638418
+epoch  30  fold  7  acc  0.7648725212464589
+epoch  30  fold  8  acc  0.7620396600566572
+epoch  30  fold  9  acc  0.7677053824362606
+| epoch  30 | time:  6.38s | loss 103283.83 | mean 74.95 | std  2.16 | 
+[15:28:5]  Epoch 31  started
+[15:28:5]  It will start to train
+[15:28:10]  Finished Train
+epoch  31  fold  0  acc  0.7062146892655368
+epoch  31  fold  1  acc  0.7288135593220338
+epoch  31  fold  2  acc  0.7429378531073446
+epoch  31  fold  3  acc  0.7288135593220338
+epoch  31  fold  4  acc  0.7711864406779662
+epoch  31  fold  5  acc  0.7655367231638418
+epoch  31  fold  6  acc  0.768361581920904
+epoch  31  fold  7  acc  0.7563739376770539
+epoch  31  fold  8  acc  0.7563739376770539
+epoch  31  fold  9  acc  0.7677053824362606
+| epoch  31 | time:  6.40s | loss 96111.00 | mean 74.92 | std  2.18 | 
+[15:28:12]  Epoch 32  started
+[15:28:12]  It will start to train
+[15:28:16]  Finished Train
+epoch  32  fold  0  acc  0.711864406779661
+epoch  32  fold  1  acc  0.7231638418079096
+epoch  32  fold  2  acc  0.7542372881355932
+epoch  32  fold  3  acc  0.7259887005649718
+epoch  32  fold  4  acc  0.7627118644067796
+epoch  32  fold  5  acc  0.7627118644067796
+epoch  32  fold  6  acc  0.7627118644067796
+epoch  32  fold  7  acc  0.7535410764872521
+epoch  32  fold  8  acc  0.7620396600566572
+epoch  32  fold  9  acc  0.773371104815864
+| epoch  32 | time:  6.45s | loss 95897.59 | mean 74.92 | std  2.10 | 
+[15:28:18]  Epoch 33  started
+[15:28:18]  It will start to train
+[15:28:22]  Finished Train
+epoch  33  fold  0  acc  0.7005649717514124
+epoch  33  fold  1  acc  0.7288135593220338
+epoch  33  fold  2  acc  0.7457627118644068
+epoch  33  fold  3  acc  0.7259887005649718
+epoch  33  fold  4  acc  0.7570621468926554
+epoch  33  fold  5  acc  0.7598870056497176
+epoch  33  fold  6  acc  0.7655367231638418
+epoch  33  fold  7  acc  0.7535410764872521
+epoch  33  fold  8  acc  0.7563739376770539
+epoch  33  fold  9  acc  0.7677053824362606
+| epoch  33 | time:  6.42s | loss 91070.42 | mean 74.61 | std  2.13 | 
+[15:28:25]  Epoch 34  started
+[15:28:25]  It will start to train
+[15:28:29]  Finished Train
+epoch  34  fold  0  acc  0.7062146892655368
+epoch  34  fold  1  acc  0.7203389830508474
+epoch  34  fold  2  acc  0.7457627118644068
+epoch  34  fold  3  acc  0.7231638418079096
+epoch  34  fold  4  acc  0.7598870056497176
+epoch  34  fold  5  acc  0.7627118644067796
+epoch  34  fold  6  acc  0.768361581920904
+epoch  34  fold  7  acc  0.7620396600566572
+epoch  34  fold  8  acc  0.7592067988668555
+epoch  34  fold  9  acc  0.7705382436260623
+| epoch  34 | time:  6.43s | loss 89498.35 | mean 74.78 | std  2.29 | 
+[15:28:31]  Epoch 35  started
+[15:28:31]  It will start to train
+[15:28:35]  Finished Train
+epoch  35  fold  0  acc  0.711864406779661
+epoch  35  fold  1  acc  0.7231638418079096
+epoch  35  fold  2  acc  0.748587570621469
+epoch  35  fold  3  acc  0.7231638418079096
+epoch  35  fold  4  acc  0.7627118644067796
+epoch  35  fold  5  acc  0.7598870056497176
+epoch  35  fold  6  acc  0.768361581920904
+epoch  35  fold  7  acc  0.7677053824362606
+epoch  35  fold  8  acc  0.7563739376770539
+epoch  35  fold  9  acc  0.7620396600566572
+| epoch  35 | time:  6.43s | loss 85273.34 | mean 74.84 | std  2.10 | 
+[15:28:37]  Epoch 36  started
+[15:28:37]  It will start to train
+[15:28:42]  Finished Train
+epoch  36  fold  0  acc  0.7062146892655368
+epoch  36  fold  1  acc  0.7231638418079096
+epoch  36  fold  2  acc  0.7457627118644068
+epoch  36  fold  3  acc  0.7203389830508474
+epoch  36  fold  4  acc  0.7598870056497176
+epoch  36  fold  5  acc  0.7655367231638418
+epoch  36  fold  6  acc  0.7655367231638418
+epoch  36  fold  7  acc  0.7620396600566572
+epoch  36  fold  8  acc  0.7620396600566572
+epoch  36  fold  9  acc  0.7592067988668555
+| epoch  36 | time:  6.42s | loss 84088.74 | mean 74.70 | std  2.21 | 
+[15:28:44]  Epoch 37  started
+[15:28:44]  It will start to train
+[15:28:48]  Finished Train
+epoch  37  fold  0  acc  0.7062146892655368
+epoch  37  fold  1  acc  0.731638418079096
+epoch  37  fold  2  acc  0.748587570621469
+epoch  37  fold  3  acc  0.7175141242937854
+epoch  37  fold  4  acc  0.751412429378531
+epoch  37  fold  5  acc  0.7627118644067796
+epoch  37  fold  6  acc  0.7598870056497176
+epoch  37  fold  7  acc  0.7620396600566572
+epoch  37  fold  8  acc  0.7563739376770539
+epoch  37  fold  9  acc  0.7620396600566572
+| epoch  37 | time:  6.45s | loss 83132.79 | mean 74.58 | std  2.04 | 
+[15:28:50]  Epoch 38  started
+[15:28:50]  It will start to train
+[15:28:55]  Finished Train
+epoch  38  fold  0  acc  0.7062146892655368
+epoch  38  fold  1  acc  0.731638418079096
+epoch  38  fold  2  acc  0.7457627118644068
+epoch  38  fold  3  acc  0.711864406779661
+epoch  38  fold  4  acc  0.7570621468926554
+epoch  38  fold  5  acc  0.7711864406779662
+epoch  38  fold  6  acc  0.7655367231638418
+epoch  38  fold  7  acc  0.7762039660056658
+epoch  38  fold  8  acc  0.7535410764872521
+epoch  38  fold  9  acc  0.7677053824362606
+| epoch  38 | time:  6.48s | loss 83909.70 | mean 74.87 | std  2.46 | 
+[15:28:57]  Epoch 39  started
+[15:28:57]  It will start to train
+[15:29:1]  Finished Train
+epoch  39  fold  0  acc  0.7146892655367232
+epoch  39  fold  1  acc  0.731638418079096
+epoch  39  fold  2  acc  0.7429378531073446
+epoch  39  fold  3  acc  0.711864406779661
+epoch  39  fold  4  acc  0.751412429378531
+epoch  39  fold  5  acc  0.7655367231638418
+epoch  39  fold  6  acc  0.768361581920904
+epoch  39  fold  7  acc  0.7677053824362606
+epoch  39  fold  8  acc  0.7535410764872521
+epoch  39  fold  9  acc  0.7705382436260623
+| epoch  39 | time:  6.43s | loss 81348.51 | mean 74.78 | std  2.20 | 
+[15:29:3]  Epoch 40  started
+[15:29:3]  It will start to train
+[15:29:8]  Finished Train
+epoch  40  fold  0  acc  0.7146892655367232
+epoch  40  fold  1  acc  0.7259887005649718
+epoch  40  fold  2  acc  0.7429378531073446
+epoch  40  fold  3  acc  0.7090395480225988
+epoch  40  fold  4  acc  0.748587570621469
+epoch  40  fold  5  acc  0.7627118644067796
+epoch  40  fold  6  acc  0.7655367231638418
+epoch  40  fold  7  acc  0.7677053824362606
+epoch  40  fold  8  acc  0.7563739376770539
+epoch  40  fold  9  acc  0.7762039660056658
+| epoch  40 | time:  6.47s | loss 80294.22 | mean 74.70 | std  2.33 | 
+[15:29:10]  Epoch 41  started
+[15:29:10]  It will start to train
+[15:29:14]  Finished Train
+epoch  41  fold  0  acc  0.7146892655367232
+epoch  41  fold  1  acc  0.7175141242937854
+epoch  41  fold  2  acc  0.7401129943502824
+epoch  41  fold  3  acc  0.7146892655367232
+epoch  41  fold  4  acc  0.751412429378531
+epoch  41  fold  5  acc  0.7655367231638418
+epoch  41  fold  6  acc  0.7655367231638418
+epoch  41  fold  7  acc  0.7762039660056658
+epoch  41  fold  8  acc  0.7478753541076487
+epoch  41  fold  9  acc  0.7762039660056658
+| epoch  41 | time:  6.41s | loss 79924.85 | mean 74.70 | std  2.45 | 
+[15:29:16]  Epoch 42  started
+[15:29:16]  It will start to train
+[15:29:20]  Finished Train
+epoch  42  fold  0  acc  0.711864406779661
+epoch  42  fold  1  acc  0.7259887005649718
+epoch  42  fold  2  acc  0.7429378531073446
+epoch  42  fold  3  acc  0.7175141242937854
+epoch  42  fold  4  acc  0.7542372881355932
+epoch  42  fold  5  acc  0.7655367231638418
+epoch  42  fold  6  acc  0.768361581920904
+epoch  42  fold  7  acc  0.7790368271954674
+epoch  42  fold  8  acc  0.7535410764872521
+epoch  42  fold  9  acc  0.7705382436260623
+| epoch  42 | time:  6.45s | loss 79125.80 | mean 74.90 | std  2.36 | 
+[15:29:22]  Epoch 43  started
+[15:29:22]  It will start to train
+[15:29:27]  Finished Train
+epoch  43  fold  0  acc  0.7203389830508474
+epoch  43  fold  1  acc  0.7288135593220338
+epoch  43  fold  2  acc  0.7429378531073446
+epoch  43  fold  3  acc  0.7203389830508474
+epoch  43  fold  4  acc  0.7598870056497176
+epoch  43  fold  5  acc  0.7655367231638418
+epoch  43  fold  6  acc  0.7598870056497176
+epoch  43  fold  7  acc  0.7705382436260623
+epoch  43  fold  8  acc  0.7535410764872521
+epoch  43  fold  9  acc  0.7677053824362606
+| epoch  43 | time:  6.47s | loss 80085.92 | mean 74.90 | std  1.95 | 
+[15:29:29]  Epoch 44  started
+[15:29:29]  It will start to train
+[15:29:33]  Finished Train
+epoch  44  fold  0  acc  0.7203389830508474
+epoch  44  fold  1  acc  0.7344632768361582
+epoch  44  fold  2  acc  0.7401129943502824
+epoch  44  fold  3  acc  0.7175141242937854
+epoch  44  fold  4  acc  0.7627118644067796
+epoch  44  fold  5  acc  0.7627118644067796
+epoch  44  fold  6  acc  0.7627118644067796
+epoch  44  fold  7  acc  0.7677053824362606
+epoch  44  fold  8  acc  0.7535410764872521
+epoch  44  fold  9  acc  0.7620396600566572
+| epoch  44 | time:  6.46s | loss 80801.47 | mean 74.84 | std  1.89 | 
+[15:29:35]  Epoch 45  started
+[15:29:35]  It will start to train
+[15:29:40]  Finished Train
+epoch  45  fold  0  acc  0.7203389830508474
+epoch  45  fold  1  acc  0.7372881355932204
+epoch  45  fold  2  acc  0.7401129943502824
+epoch  45  fold  3  acc  0.7090395480225988
+epoch  45  fold  4  acc  0.7598870056497176
+epoch  45  fold  5  acc  0.7627118644067796
+epoch  45  fold  6  acc  0.7711864406779662
+epoch  45  fold  7  acc  0.7677053824362606
+epoch  45  fold  8  acc  0.7422096317280453
+epoch  45  fold  9  acc  0.7620396600566572
+| epoch  45 | time:  6.37s | loss 77938.22 | mean 74.73 | std  2.10 | 
+[15:29:42]  Epoch 46  started
+[15:29:42]  It will start to train
+[15:29:46]  Finished Train
+epoch  46  fold  0  acc  0.7175141242937854
+epoch  46  fold  1  acc  0.7344632768361582
+epoch  46  fold  2  acc  0.7372881355932204
+epoch  46  fold  3  acc  0.711864406779661
+epoch  46  fold  4  acc  0.7570621468926554
+epoch  46  fold  5  acc  0.7598870056497176
+epoch  46  fold  6  acc  0.7655367231638418
+epoch  46  fold  7  acc  0.7535410764872521
+epoch  46  fold  8  acc  0.7393767705382436
+epoch  46  fold  9  acc  0.7563739376770539
+| epoch  46 | time:  6.49s | loss 77288.25 | mean 74.33 | std  1.83 | 
+[15:29:48]  Epoch 47  started
+[15:29:48]  It will start to train
+[15:29:53]  Finished Train
+epoch  47  fold  0  acc  0.7203389830508474
+epoch  47  fold  1  acc  0.7259887005649718
+epoch  47  fold  2  acc  0.7401129943502824
+epoch  47  fold  3  acc  0.711864406779661
+epoch  47  fold  4  acc  0.7542372881355932
+epoch  47  fold  5  acc  0.7627118644067796
+epoch  47  fold  6  acc  0.7655367231638418
+epoch  47  fold  7  acc  0.7535410764872521
+epoch  47  fold  8  acc  0.7422096317280453
+epoch  47  fold  9  acc  0.7790368271954674
+| epoch  47 | time:  6.42s | loss 78088.60 | mean 74.56 | std  2.15 | 
+[15:29:55]  Epoch 48  started
+[15:29:55]  It will start to train
+[15:29:59]  Finished Train
+epoch  48  fold  0  acc  0.7175141242937854
+epoch  48  fold  1  acc  0.7259887005649718
+epoch  48  fold  2  acc  0.7344632768361582
+epoch  48  fold  3  acc  0.7033898305084746
+epoch  48  fold  4  acc  0.751412429378531
+epoch  48  fold  5  acc  0.7598870056497176
+epoch  48  fold  6  acc  0.7740112994350282
+epoch  48  fold  7  acc  0.7535410764872521
+epoch  48  fold  8  acc  0.7450424929178471
+epoch  48  fold  9  acc  0.773371104815864
+| epoch  48 | time:  6.48s | loss 79578.86 | mean 74.39 | std  2.34 | 
+[15:30:1]  Epoch 49  started
+[15:30:1]  It will start to train
+[15:30:6]  Finished Train
+epoch  49  fold  0  acc  0.7203389830508474
+epoch  49  fold  1  acc  0.7288135593220338
+epoch  49  fold  2  acc  0.731638418079096
+epoch  49  fold  3  acc  0.7005649717514124
+epoch  49  fold  4  acc  0.7598870056497176
+epoch  49  fold  5  acc  0.7570621468926554
+epoch  49  fold  6  acc  0.7711864406779662
+epoch  49  fold  7  acc  0.7592067988668555
+epoch  49  fold  8  acc  0.7450424929178471
+epoch  49  fold  9  acc  0.7705382436260623
+| epoch  49 | time:  6.53s | loss 79141.52 | mean 74.44 | std  2.34 | 
+[15:30:8]  Epoch 50  started
+[15:30:8]  It will start to train
+[15:30:12]  Finished Train
+epoch  50  fold  0  acc  0.711864406779661
+epoch  50  fold  1  acc  0.7372881355932204
+epoch  50  fold  2  acc  0.7372881355932204
+epoch  50  fold  3  acc  0.7090395480225988
+epoch  50  fold  4  acc  0.7570621468926554
+epoch  50  fold  5  acc  0.768361581920904
+epoch  50  fold  6  acc  0.7598870056497176
+epoch  50  fold  7  acc  0.7535410764872521
+epoch  50  fold  8  acc  0.7478753541076487
+epoch  50  fold  9  acc  0.7818696883852692
+| epoch  50 | time:  6.52s | loss 77735.64 | mean 74.64 | std  2.32 | 
+[15:30:14]  Epoch 51  started
+[15:30:14]  It will start to train
+[15:30:19]  Finished Train
+epoch  51  fold  0  acc  0.7203389830508474
+epoch  51  fold  1  acc  0.7344632768361582
+epoch  51  fold  2  acc  0.731638418079096
+epoch  51  fold  3  acc  0.7175141242937854
+epoch  51  fold  4  acc  0.751412429378531
+epoch  51  fold  5  acc  0.7598870056497176
+epoch  51  fold  6  acc  0.7740112994350282
+epoch  51  fold  7  acc  0.7620396600566572
+epoch  51  fold  8  acc  0.7422096317280453
+epoch  51  fold  9  acc  0.7648725212464589
+| epoch  51 | time:  6.54s | loss 75997.20 | mean 74.58 | std  1.96 | 
+[15:30:21]  Epoch 52  started
+[15:30:21]  It will start to train
+[15:30:25]  Finished Train
+epoch  52  fold  0  acc  0.7231638418079096
+epoch  52  fold  1  acc  0.731638418079096
+epoch  52  fold  2  acc  0.7401129943502824
+epoch  52  fold  3  acc  0.7203389830508474
+epoch  52  fold  4  acc  0.751412429378531
+epoch  52  fold  5  acc  0.7570621468926554
+epoch  52  fold  6  acc  0.7711864406779662
+epoch  52  fold  7  acc  0.7592067988668555
+epoch  52  fold  8  acc  0.7507082152974505
+epoch  52  fold  9  acc  0.7620396600566572
+| epoch  52 | time:  6.57s | loss 75737.95 | mean 74.67 | std  1.72 | 
+[15:30:27]  Epoch 53  started
+[15:30:27]  It will start to train
+[15:30:32]  Finished Train
+epoch  53  fold  0  acc  0.7146892655367232
+epoch  53  fold  1  acc  0.731638418079096
+epoch  53  fold  2  acc  0.7372881355932204
+epoch  53  fold  3  acc  0.7175141242937854
+epoch  53  fold  4  acc  0.7542372881355932
+epoch  53  fold  5  acc  0.7570621468926554
+epoch  53  fold  6  acc  0.7711864406779662
+epoch  53  fold  7  acc  0.7592067988668555
+epoch  53  fold  8  acc  0.7478753541076487
+epoch  53  fold  9  acc  0.7648725212464589
+| epoch  53 | time:  6.58s | loss 78504.80 | mean 74.56 | std  1.95 | 
+[15:30:34]  Epoch 54  started
+[15:30:34]  It will start to train
+[15:30:38]  Finished Train
+epoch  54  fold  0  acc  0.7203389830508474
+epoch  54  fold  1  acc  0.7344632768361582
+epoch  54  fold  2  acc  0.7457627118644068
+epoch  54  fold  3  acc  0.7259887005649718
+epoch  54  fold  4  acc  0.7570621468926554
+epoch  54  fold  5  acc  0.7542372881355932
+epoch  54  fold  6  acc  0.7655367231638418
+epoch  54  fold  7  acc  0.7563739376770539
+epoch  54  fold  8  acc  0.7535410764872521
+epoch  54  fold  9  acc  0.7563739376770539
+| epoch  54 | time:  6.57s | loss 76854.80 | mean 74.70 | std  1.50 | 
+[15:30:40]  Epoch 55  started
+[15:30:40]  It will start to train
+[15:30:45]  Finished Train
+epoch  55  fold  0  acc  0.7146892655367232
+epoch  55  fold  1  acc  0.7344632768361582
+epoch  55  fold  2  acc  0.748587570621469
+epoch  55  fold  3  acc  0.7203389830508474
+epoch  55  fold  4  acc  0.7655367231638418
+epoch  55  fold  5  acc  0.7740112994350282
+epoch  55  fold  6  acc  0.768361581920904
+epoch  55  fold  7  acc  0.7535410764872521
+epoch  55  fold  8  acc  0.7535410764872521
+epoch  55  fold  9  acc  0.7620396600566572
+| epoch  55 | time:  6.59s | loss 78448.53 | mean 74.95 | std  2.03 | 
+[15:30:47]  Epoch 56  started
+[15:30:47]  It will start to train
+[15:30:51]  Finished Train
+epoch  56  fold  0  acc  0.711864406779661
+epoch  56  fold  1  acc  0.7401129943502824
+epoch  56  fold  2  acc  0.7401129943502824
+epoch  56  fold  3  acc  0.7203389830508474
+epoch  56  fold  4  acc  0.7655367231638418
+epoch  56  fold  5  acc  0.7627118644067796
+epoch  56  fold  6  acc  0.7796610169491526
+epoch  56  fold  7  acc  0.7563739376770539
+epoch  56  fold  8  acc  0.7563739376770539
+epoch  56  fold  9  acc  0.7535410764872521
+| epoch  56 | time:  6.50s | loss 76697.02 | mean 74.87 | std  2.08 | 
+[15:30:54]  Epoch 57  started
+[15:30:54]  It will start to train
+[15:30:58]  Finished Train
+epoch  57  fold  0  acc  0.7175141242937854
+epoch  57  fold  1  acc  0.731638418079096
+epoch  57  fold  2  acc  0.7401129943502824
+epoch  57  fold  3  acc  0.7203389830508474
+epoch  57  fold  4  acc  0.768361581920904
+epoch  57  fold  5  acc  0.7768361581920904
+epoch  57  fold  6  acc  0.7824858757062146
+epoch  57  fold  7  acc  0.7563739376770539
+epoch  57  fold  8  acc  0.7535410764872521
+epoch  57  fold  9  acc  0.7507082152974505
+| epoch  57 | time:  6.49s | loss 77482.75 | mean 74.98 | std  2.24 | 
+[15:31:0]  Epoch 58  started
+[15:31:0]  It will start to train
+[15:31:4]  Finished Train
+epoch  58  fold  0  acc  0.7146892655367232
+epoch  58  fold  1  acc  0.731638418079096
+epoch  58  fold  2  acc  0.7372881355932204
+epoch  58  fold  3  acc  0.7231638418079096
+epoch  58  fold  4  acc  0.7740112994350282
+epoch  58  fold  5  acc  0.7711864406779662
+epoch  58  fold  6  acc  0.7796610169491526
+epoch  58  fold  7  acc  0.7592067988668555
+epoch  58  fold  8  acc  0.7535410764872521
+epoch  58  fold  9  acc  0.7535410764872521
+| epoch  58 | time:  6.54s | loss 76945.72 | mean 74.98 | std  2.23 | 
+[15:31:7]  Epoch 59  started
+[15:31:7]  It will start to train
+[15:31:11]  Finished Train
+epoch  59  fold  0  acc  0.7203389830508474
+epoch  59  fold  1  acc  0.7175141242937854
+epoch  59  fold  2  acc  0.7429378531073446
+epoch  59  fold  3  acc  0.7203389830508474
+epoch  59  fold  4  acc  0.7740112994350282
+epoch  59  fold  5  acc  0.7627118644067796
+epoch  59  fold  6  acc  0.7768361581920904
+epoch  59  fold  7  acc  0.7592067988668555
+epoch  59  fold  8  acc  0.7592067988668555
+epoch  59  fold  9  acc  0.7592067988668555
+| epoch  59 | time:  6.52s | loss 77696.42 | mean 74.92 | std  2.25 | 
+[15:31:13]  Epoch 60  started
+[15:31:13]  It will start to train
+[15:31:17]  Finished Train
+epoch  60  fold  0  acc  0.7175141242937854
+epoch  60  fold  1  acc  0.7259887005649718
+epoch  60  fold  2  acc  0.7344632768361582
+epoch  60  fold  3  acc  0.7175141242937854
+epoch  60  fold  4  acc  0.768361581920904
+epoch  60  fold  5  acc  0.7598870056497176
+epoch  60  fold  6  acc  0.7824858757062146
+epoch  60  fold  7  acc  0.7507082152974505
+epoch  60  fold  8  acc  0.7535410764872521
+epoch  60  fold  9  acc  0.7563739376770539
+| epoch  60 | time:  6.48s | loss 76108.74 | mean 74.67 | std  2.20 | 
+[15:31:20]  Epoch 61  started
+[15:31:20]  It will start to train
+[15:31:24]  Finished Train
+epoch  61  fold  0  acc  0.7062146892655368
+epoch  61  fold  1  acc  0.7259887005649718
+epoch  61  fold  2  acc  0.7401129943502824
+epoch  61  fold  3  acc  0.7175141242937854
+epoch  61  fold  4  acc  0.7711864406779662
+epoch  61  fold  5  acc  0.751412429378531
+epoch  61  fold  6  acc  0.7655367231638418
+epoch  61  fold  7  acc  0.7535410764872521
+epoch  61  fold  8  acc  0.7535410764872521
+epoch  61  fold  9  acc  0.7648725212464589
+| epoch  61 | time:  6.48s | loss 76985.60 | mean 74.50 | std  2.19 | 
+[15:31:26]  Epoch 62  started
+[15:31:26]  It will start to train
+[15:31:30]  Finished Train
+epoch  62  fold  0  acc  0.7090395480225988
+epoch  62  fold  1  acc  0.7344632768361582
+epoch  62  fold  2  acc  0.7457627118644068
+epoch  62  fold  3  acc  0.7203389830508474
+epoch  62  fold  4  acc  0.7711864406779662
+epoch  62  fold  5  acc  0.7627118644067796
+epoch  62  fold  6  acc  0.7768361581920904
+epoch  62  fold  7  acc  0.7507082152974505
+epoch  62  fold  8  acc  0.7478753541076487
+epoch  62  fold  9  acc  0.7620396600566572
+| epoch  62 | time:  6.57s | loss 75624.23 | mean 74.81 | std  2.18 | 
+[15:31:33]  Epoch 63  started
+[15:31:33]  It will start to train
+[15:31:37]  Finished Train
+epoch  63  fold  0  acc  0.7062146892655368
+epoch  63  fold  1  acc  0.731638418079096
+epoch  63  fold  2  acc  0.7429378531073446
+epoch  63  fold  3  acc  0.7259887005649718
+epoch  63  fold  4  acc  0.768361581920904
+epoch  63  fold  5  acc  0.7598870056497176
+epoch  63  fold  6  acc  0.7655367231638418
+epoch  63  fold  7  acc  0.7535410764872521
+epoch  63  fold  8  acc  0.7507082152974505
+epoch  63  fold  9  acc  0.7592067988668555
+| epoch  63 | time:  6.53s | loss 76121.22 | mean 74.64 | std  1.98 | 
+[15:31:39]  Epoch 64  started
+[15:31:39]  It will start to train
+[15:31:44]  Finished Train
+epoch  64  fold  0  acc  0.7005649717514124
+epoch  64  fold  1  acc  0.7344632768361582
+epoch  64  fold  2  acc  0.7401129943502824
+epoch  64  fold  3  acc  0.7288135593220338
+epoch  64  fold  4  acc  0.7627118644067796
+epoch  64  fold  5  acc  0.751412429378531
+epoch  64  fold  6  acc  0.7740112994350282
+epoch  64  fold  7  acc  0.7507082152974505
+epoch  64  fold  8  acc  0.7450424929178471
+epoch  64  fold  9  acc  0.7592067988668555
+| epoch  64 | time:  6.53s | loss 76200.49 | mean 74.47 | std  2.06 | 
+[15:31:46]  Epoch 65  started
+[15:31:46]  It will start to train
+[15:31:50]  Finished Train
+epoch  65  fold  0  acc  0.7033898305084746
+epoch  65  fold  1  acc  0.7401129943502824
+epoch  65  fold  2  acc  0.7372881355932204
+epoch  65  fold  3  acc  0.731638418079096
+epoch  65  fold  4  acc  0.7627118644067796
+epoch  65  fold  5  acc  0.751412429378531
+epoch  65  fold  6  acc  0.768361581920904
+epoch  65  fold  7  acc  0.7535410764872521
+epoch  65  fold  8  acc  0.7478753541076487
+epoch  65  fold  9  acc  0.7563739376770539
+| epoch  65 | time:  6.57s | loss 76351.97 | mean 74.53 | std  1.86 | 
+[15:31:52]  Epoch 66  started
+[15:31:52]  It will start to train
+[15:31:57]  Finished Train
+epoch  66  fold  0  acc  0.7033898305084746
+epoch  66  fold  1  acc  0.7288135593220338
+epoch  66  fold  2  acc  0.7372881355932204
+epoch  66  fold  3  acc  0.731638418079096
+epoch  66  fold  4  acc  0.7598870056497176
+epoch  66  fold  5  acc  0.751412429378531
+epoch  66  fold  6  acc  0.7711864406779662
+epoch  66  fold  7  acc  0.7592067988668555
+epoch  66  fold  8  acc  0.7422096317280453
+epoch  66  fold  9  acc  0.7507082152974505
+| epoch  66 | time:  6.51s | loss 73980.30 | mean 74.36 | std  1.94 | 
+[15:31:59]  Epoch 67  started
+[15:31:59]  It will start to train
+[15:32:3]  Finished Train
+epoch  67  fold  0  acc  0.7062146892655368
+epoch  67  fold  1  acc  0.7288135593220338
+epoch  67  fold  2  acc  0.7401129943502824
+epoch  67  fold  3  acc  0.7344632768361582
+epoch  67  fold  4  acc  0.748587570621469
+epoch  67  fold  5  acc  0.7598870056497176
+epoch  67  fold  6  acc  0.7768361581920904
+epoch  67  fold  7  acc  0.7563739376770539
+epoch  67  fold  8  acc  0.7422096317280453
+epoch  67  fold  9  acc  0.7535410764872521
+| epoch  67 | time:  6.64s | loss 78190.78 | mean 74.47 | std  1.93 | 
+[15:32:5]  Epoch 68  started
+[15:32:5]  It will start to train
+[15:32:10]  Finished Train
+epoch  68  fold  0  acc  0.711864406779661
+epoch  68  fold  1  acc  0.7259887005649718
+epoch  68  fold  2  acc  0.7344632768361582
+epoch  68  fold  3  acc  0.7344632768361582
+epoch  68  fold  4  acc  0.7627118644067796
+epoch  68  fold  5  acc  0.7429378531073446
+epoch  68  fold  6  acc  0.7740112994350282
+epoch  68  fold  7  acc  0.7535410764872521
+epoch  68  fold  8  acc  0.7507082152974505
+epoch  68  fold  9  acc  0.7535410764872521
+| epoch  68 | time:  6.54s | loss 75809.20 | mean 74.44 | std  1.83 | 
+[15:32:12]  Epoch 69  started
+[15:32:12]  It will start to train
+[15:32:16]  Finished Train
+epoch  69  fold  0  acc  0.7146892655367232
+epoch  69  fold  1  acc  0.731638418079096
+epoch  69  fold  2  acc  0.7344632768361582
+epoch  69  fold  3  acc  0.7344632768361582
+epoch  69  fold  4  acc  0.7655367231638418
+epoch  69  fold  5  acc  0.751412429378531
+epoch  69  fold  6  acc  0.768361581920904
+epoch  69  fold  7  acc  0.7507082152974505
+epoch  69  fold  8  acc  0.7422096317280453
+epoch  69  fold  9  acc  0.7563739376770539
+| epoch  69 | time:  6.64s | loss 76244.63 | mean 74.50 | std  1.67 | 
+[15:32:19]  Epoch 70  started
+[15:32:19]  It will start to train
+[15:32:23]  Finished Train
+epoch  70  fold  0  acc  0.7090395480225988
+epoch  70  fold  1  acc  0.7401129943502824
+epoch  70  fold  2  acc  0.731638418079096
+epoch  70  fold  3  acc  0.731638418079096
+epoch  70  fold  4  acc  0.7655367231638418
+epoch  70  fold  5  acc  0.7542372881355932
+epoch  70  fold  6  acc  0.768361581920904
+epoch  70  fold  7  acc  0.7563739376770539
+epoch  70  fold  8  acc  0.7450424929178471
+epoch  70  fold  9  acc  0.7620396600566572
+| epoch  70 | time:  6.64s | loss 76171.13 | mean 74.64 | std  1.86 | 
+[15:32:25]  Epoch 71  started
+[15:32:25]  It will start to train
+[15:32:30]  Finished Train
+epoch  71  fold  0  acc  0.7146892655367232
+epoch  71  fold  1  acc  0.7401129943502824
+epoch  71  fold  2  acc  0.731638418079096
+epoch  71  fold  3  acc  0.7372881355932204
+epoch  71  fold  4  acc  0.7627118644067796
+epoch  71  fold  5  acc  0.7598870056497176
+epoch  71  fold  6  acc  0.7655367231638418
+epoch  71  fold  7  acc  0.7592067988668555
+epoch  71  fold  8  acc  0.7507082152974505
+epoch  71  fold  9  acc  0.7648725212464589
+| epoch  71 | time:  6.62s | loss 74955.75 | mean 74.87 | std  1.71 | 
+[15:32:32]  Epoch 72  started
+[15:32:32]  It will start to train
+[15:32:36]  Finished Train
+epoch  72  fold  0  acc  0.7062146892655368
+epoch  72  fold  1  acc  0.7372881355932204
+epoch  72  fold  2  acc  0.7344632768361582
+epoch  72  fold  3  acc  0.7288135593220338
+epoch  72  fold  4  acc  0.7598870056497176
+epoch  72  fold  5  acc  0.7627118644067796
+epoch  72  fold  6  acc  0.7655367231638418
+epoch  72  fold  7  acc  0.7563739376770539
+epoch  72  fold  8  acc  0.7507082152974505
+epoch  72  fold  9  acc  0.7592067988668555
+| epoch  72 | time:  6.69s | loss 76859.92 | mean 74.61 | std  1.90 | 
+[15:32:39]  Epoch 73  started
+[15:32:39]  It will start to train
+[15:32:43]  Finished Train
+epoch  73  fold  0  acc  0.7062146892655368
+epoch  73  fold  1  acc  0.731638418079096
+epoch  73  fold  2  acc  0.7344632768361582
+epoch  73  fold  3  acc  0.7344632768361582
+epoch  73  fold  4  acc  0.7542372881355932
+epoch  73  fold  5  acc  0.7598870056497176
+epoch  73  fold  6  acc  0.7598870056497176
+epoch  73  fold  7  acc  0.7592067988668555
+epoch  73  fold  8  acc  0.7450424929178471
+epoch  73  fold  9  acc  0.7648725212464589
+| epoch  73 | time:  6.68s | loss 76507.00 | mean 74.50 | std  1.83 | 
+[15:32:45]  Epoch 74  started
+[15:32:45]  It will start to train
+[15:32:50]  Finished Train
+epoch  74  fold  0  acc  0.6977401129943502
+epoch  74  fold  1  acc  0.731638418079096
+epoch  74  fold  2  acc  0.7344632768361582
+epoch  74  fold  3  acc  0.731638418079096
+epoch  74  fold  4  acc  0.7570621468926554
+epoch  74  fold  5  acc  0.751412429378531
+epoch  74  fold  6  acc  0.7627118644067796
+epoch  74  fold  7  acc  0.7535410764872521
+epoch  74  fold  8  acc  0.7507082152974505
+epoch  74  fold  9  acc  0.7592067988668555
+| epoch  74 | time:  6.65s | loss 75713.09 | mean 74.30 | std  1.96 | 
+[15:32:52]  Epoch 75  started
+[15:32:52]  It will start to train
+[15:32:56]  Finished Train
+epoch  75  fold  0  acc  0.7005649717514124
+epoch  75  fold  1  acc  0.731638418079096
+epoch  75  fold  2  acc  0.7344632768361582
+epoch  75  fold  3  acc  0.7288135593220338
+epoch  75  fold  4  acc  0.7542372881355932
+epoch  75  fold  5  acc  0.748587570621469
+epoch  75  fold  6  acc  0.7627118644067796
+epoch  75  fold  7  acc  0.7478753541076487
+epoch  75  fold  8  acc  0.7507082152974505
+epoch  75  fold  9  acc  0.7648725212464589
+| epoch  75 | time:  6.61s | loss 75584.08 | mean 74.24 | std  1.92 | 
+[15:32:58]  Epoch 76  started
+[15:32:58]  It will start to train
+[15:33:3]  Finished Train
+epoch  76  fold  0  acc  0.7005649717514124
+epoch  76  fold  1  acc  0.731638418079096
+epoch  76  fold  2  acc  0.731638418079096
+epoch  76  fold  3  acc  0.7288135593220338
+epoch  76  fold  4  acc  0.7542372881355932
+epoch  76  fold  5  acc  0.748587570621469
+epoch  76  fold  6  acc  0.7627118644067796
+epoch  76  fold  7  acc  0.7450424929178471
+epoch  76  fold  8  acc  0.7478753541076487
+epoch  76  fold  9  acc  0.7677053824362606
+| epoch  76 | time:  6.57s | loss 75239.26 | mean 74.19 | std  1.95 | 
+[15:33:5]  Epoch 77  started
+[15:33:5]  It will start to train
+[15:33:9]  Finished Train
+epoch  77  fold  0  acc  0.7062146892655368
+epoch  77  fold  1  acc  0.7372881355932204
+epoch  77  fold  2  acc  0.731638418079096
+epoch  77  fold  3  acc  0.7259887005649718
+epoch  77  fold  4  acc  0.7598870056497176
+epoch  77  fold  5  acc  0.748587570621469
+epoch  77  fold  6  acc  0.7598870056497176
+epoch  77  fold  7  acc  0.7507082152974505
+epoch  77  fold  8  acc  0.7507082152974505
+epoch  77  fold  9  acc  0.7648725212464589
+| epoch  77 | time:  6.58s | loss 75005.05 | mean 74.36 | std  1.83 | 
+[15:33:12]  Epoch 78  started
+[15:33:12]  It will start to train
+[15:33:16]  Finished Train
+epoch  78  fold  0  acc  0.7090395480225988
+epoch  78  fold  1  acc  0.7372881355932204
+epoch  78  fold  2  acc  0.731638418079096
+epoch  78  fold  3  acc  0.7259887005649718
+epoch  78  fold  4  acc  0.7542372881355932
+epoch  78  fold  5  acc  0.7401129943502824
+epoch  78  fold  6  acc  0.7655367231638418
+epoch  78  fold  7  acc  0.7507082152974505
+epoch  78  fold  8  acc  0.7478753541076487
+epoch  78  fold  9  acc  0.773371104815864
+| epoch  78 | time:  6.58s | loss 73183.90 | mean 74.36 | std  1.90 | 
+[15:33:18]  Epoch 79  started
+[15:33:18]  It will start to train
+[15:33:23]  Finished Train
+epoch  79  fold  0  acc  0.6949152542372882
+epoch  79  fold  1  acc  0.7288135593220338
+epoch  79  fold  2  acc  0.7344632768361582
+epoch  79  fold  3  acc  0.7231638418079096
+epoch  79  fold  4  acc  0.7598870056497176
+epoch  79  fold  5  acc  0.7372881355932204
+epoch  79  fold  6  acc  0.7655367231638418
+epoch  79  fold  7  acc  0.7478753541076487
+epoch  79  fold  8  acc  0.7507082152974505
+epoch  79  fold  9  acc  0.7705382436260623
+| epoch  79 | time:  6.57s | loss 75719.49 | mean 74.13 | std  2.27 | 
+[15:33:25]  Epoch 80  started
+[15:33:25]  It will start to train
+[15:33:29]  Finished Train
+epoch  80  fold  0  acc  0.6977401129943502
+epoch  80  fold  1  acc  0.7344632768361582
+epoch  80  fold  2  acc  0.7344632768361582
+epoch  80  fold  3  acc  0.7231638418079096
+epoch  80  fold  4  acc  0.7598870056497176
+epoch  80  fold  5  acc  0.748587570621469
+epoch  80  fold  6  acc  0.7542372881355932
+epoch  80  fold  7  acc  0.7507082152974505
+epoch  80  fold  8  acc  0.7422096317280453
+epoch  80  fold  9  acc  0.7592067988668555
+| epoch  80 | time:  6.62s | loss 75802.44 | mean 74.05 | std  1.91 | 
+[15:33:31]  Epoch 81  started
+[15:33:31]  It will start to train
+[15:33:36]  Finished Train
+epoch  81  fold  0  acc  0.6949152542372882
+epoch  81  fold  1  acc  0.7344632768361582
+epoch  81  fold  2  acc  0.7231638418079096
+epoch  81  fold  3  acc  0.7231638418079096
+epoch  81  fold  4  acc  0.7627118644067796
+epoch  81  fold  5  acc  0.751412429378531
+epoch  81  fold  6  acc  0.7542372881355932
+epoch  81  fold  7  acc  0.7450424929178471
+epoch  81  fold  8  acc  0.7393767705382436
+epoch  81  fold  9  acc  0.7648725212464589
+| epoch  81 | time:  6.61s | loss 73965.34 | mean 73.93 | std  2.14 | 
+[15:33:38]  Epoch 82  started
+[15:33:38]  It will start to train
+[15:33:42]  Finished Train
+epoch  82  fold  0  acc  0.6892655367231638
+epoch  82  fold  1  acc  0.7457627118644068
+epoch  82  fold  2  acc  0.7231638418079096
+epoch  82  fold  3  acc  0.7203389830508474
+epoch  82  fold  4  acc  0.7598870056497176
+epoch  82  fold  5  acc  0.751412429378531
+epoch  82  fold  6  acc  0.7598870056497176
+epoch  82  fold  7  acc  0.7450424929178471
+epoch  82  fold  8  acc  0.7450424929178471
+epoch  82  fold  9  acc  0.7677053824362606
+| epoch  82 | time:  6.64s | loss 76751.42 | mean 74.08 | std  2.36 | 
+[15:33:45]  Epoch 83  started
+[15:33:45]  It will start to train
+[15:33:49]  Finished Train
+epoch  83  fold  0  acc  0.7005649717514124
+epoch  83  fold  1  acc  0.7372881355932204
+epoch  83  fold  2  acc  0.7259887005649718
+epoch  83  fold  3  acc  0.7259887005649718
+epoch  83  fold  4  acc  0.7570621468926554
+epoch  83  fold  5  acc  0.751412429378531
+epoch  83  fold  6  acc  0.7598870056497176
+epoch  83  fold  7  acc  0.7478753541076487
+epoch  83  fold  8  acc  0.7393767705382436
+epoch  83  fold  9  acc  0.7620396600566572
+| epoch  83 | time:  6.64s | loss 75003.61 | mean 74.07 | std  1.92 | 
+[15:33:51]  Epoch 84  started
+[15:33:51]  It will start to train
+[15:33:56]  Finished Train
+epoch  84  fold  0  acc  0.7090395480225988
+epoch  84  fold  1  acc  0.7457627118644068
+epoch  84  fold  2  acc  0.7288135593220338
+epoch  84  fold  3  acc  0.731638418079096
+epoch  84  fold  4  acc  0.7598870056497176
+epoch  84  fold  5  acc  0.748587570621469
+epoch  84  fold  6  acc  0.7542372881355932
+epoch  84  fold  7  acc  0.7478753541076487
+epoch  84  fold  8  acc  0.7450424929178471
+epoch  84  fold  9  acc  0.7648725212464589
+| epoch  84 | time:  6.59s | loss 75377.09 | mean 74.36 | std  1.65 | 
+[15:33:58]  Epoch 85  started
+[15:33:58]  It will start to train
+[15:34:2]  Finished Train
+epoch  85  fold  0  acc  0.7062146892655368
+epoch  85  fold  1  acc  0.748587570621469
+epoch  85  fold  2  acc  0.7231638418079096
+epoch  85  fold  3  acc  0.731638418079096
+epoch  85  fold  4  acc  0.751412429378531
+epoch  85  fold  5  acc  0.7429378531073446
+epoch  85  fold  6  acc  0.7570621468926554
+epoch  85  fold  7  acc  0.7535410764872521
+epoch  85  fold  8  acc  0.7450424929178471
+epoch  85  fold  9  acc  0.7563739376770539
+| epoch  85 | time:  6.63s | loss 76163.24 | mean 74.16 | std  1.65 | 
+[15:34:5]  Epoch 86  started
+[15:34:5]  It will start to train
+[15:34:9]  Finished Train
+epoch  86  fold  0  acc  0.7203389830508474
+epoch  86  fold  1  acc  0.748587570621469
+epoch  86  fold  2  acc  0.7203389830508474
+epoch  86  fold  3  acc  0.7344632768361582
+epoch  86  fold  4  acc  0.7598870056497176
+epoch  86  fold  5  acc  0.748587570621469
+epoch  86  fold  6  acc  0.7598870056497176
+epoch  86  fold  7  acc  0.7563739376770539
+epoch  86  fold  8  acc  0.7478753541076487
+epoch  86  fold  9  acc  0.7535410764872521
+| epoch  86 | time:  6.65s | loss 75065.87 | mean 74.50 | std  1.49 | 
+[15:34:11]  Epoch 87  started
+[15:34:11]  It will start to train
+[15:34:16]  Finished Train
+epoch  87  fold  0  acc  0.7175141242937854
+epoch  87  fold  1  acc  0.7457627118644068
+epoch  87  fold  2  acc  0.7288135593220338
+epoch  87  fold  3  acc  0.7372881355932204
+epoch  87  fold  4  acc  0.7570621468926554
+epoch  87  fold  5  acc  0.7429378531073446
+epoch  87  fold  6  acc  0.7570621468926554
+epoch  87  fold  7  acc  0.7535410764872521
+epoch  87  fold  8  acc  0.7422096317280453
+epoch  87  fold  9  acc  0.7535410764872521
+| epoch  87 | time:  6.63s | loss 76678.50 | mean 74.36 | std  1.29 | 
+[15:34:18]  Epoch 88  started
+[15:34:18]  It will start to train
+[15:34:22]  Finished Train
+epoch  88  fold  0  acc  0.7146892655367232
+epoch  88  fold  1  acc  0.7372881355932204
+epoch  88  fold  2  acc  0.7344632768361582
+epoch  88  fold  3  acc  0.7372881355932204
+epoch  88  fold  4  acc  0.7570621468926554
+epoch  88  fold  5  acc  0.7457627118644068
+epoch  88  fold  6  acc  0.7655367231638418
+epoch  88  fold  7  acc  0.7535410764872521
+epoch  88  fold  8  acc  0.7393767705382436
+epoch  88  fold  9  acc  0.7535410764872521
+| epoch  88 | time:  6.65s | loss 75833.49 | mean 74.39 | std  1.45 | 
+[15:34:24]  Epoch 89  started
+[15:34:24]  It will start to train
+[15:34:29]  Finished Train
+epoch  89  fold  0  acc  0.7175141242937854
+epoch  89  fold  1  acc  0.7401129943502824
+epoch  89  fold  2  acc  0.7259887005649718
+epoch  89  fold  3  acc  0.7401129943502824
+epoch  89  fold  4  acc  0.7570621468926554
+epoch  89  fold  5  acc  0.7457627118644068
+epoch  89  fold  6  acc  0.7598870056497176
+epoch  89  fold  7  acc  0.7535410764872521
+epoch  89  fold  8  acc  0.7422096317280453
+epoch  89  fold  9  acc  0.7563739376770539
+| epoch  89 | time:  6.69s | loss 76499.38 | mean 74.39 | std  1.39 | 
+[15:34:31]  Epoch 90  started
+[15:34:31]  It will start to train
+[15:34:36]  Finished Train
+epoch  90  fold  0  acc  0.7175141242937854
+epoch  90  fold  1  acc  0.7429378531073446
+epoch  90  fold  2  acc  0.7372881355932204
+epoch  90  fold  3  acc  0.7344632768361582
+epoch  90  fold  4  acc  0.751412429378531
+epoch  90  fold  5  acc  0.748587570621469
+epoch  90  fold  6  acc  0.7655367231638418
+epoch  90  fold  7  acc  0.7478753541076487
+epoch  90  fold  8  acc  0.7393767705382436
+epoch  90  fold  9  acc  0.7535410764872521
+| epoch  90 | time:  6.66s | loss 74806.47 | mean 74.39 | std  1.29 | 
+[15:34:38]  Epoch 91  started
+[15:34:38]  It will start to train
+[15:34:42]  Finished Train
+epoch  91  fold  0  acc  0.7175141242937854
+epoch  91  fold  1  acc  0.7457627118644068
+epoch  91  fold  2  acc  0.7372881355932204
+epoch  91  fold  3  acc  0.731638418079096
+epoch  91  fold  4  acc  0.7598870056497176
+epoch  91  fold  5  acc  0.748587570621469
+epoch  91  fold  6  acc  0.7627118644067796
+epoch  91  fold  7  acc  0.7393767705382436
+epoch  91  fold  8  acc  0.7365439093484419
+epoch  91  fold  9  acc  0.7563739376770539
+| epoch  91 | time:  6.65s | loss 75068.09 | mean 74.36 | std  1.40 | 
+[15:34:44]  Epoch 92  started
+[15:34:44]  It will start to train
+[15:34:49]  Finished Train
+epoch  92  fold  0  acc  0.7175141242937854
+epoch  92  fold  1  acc  0.7429378531073446
+epoch  92  fold  2  acc  0.7401129943502824
+epoch  92  fold  3  acc  0.7372881355932204
+epoch  92  fold  4  acc  0.7570621468926554
+epoch  92  fold  5  acc  0.7429378531073446
+epoch  92  fold  6  acc  0.7627118644067796
+epoch  92  fold  7  acc  0.7478753541076487
+epoch  92  fold  8  acc  0.7365439093484419
+epoch  92  fold  9  acc  0.7478753541076487
+| epoch  92 | time:  6.65s | loss 75194.72 | mean 74.33 | std  1.23 | 
+[15:34:51]  Epoch 93  started
+[15:34:51]  It will start to train
+[15:34:55]  Finished Train
+epoch  93  fold  0  acc  0.7175141242937854
+epoch  93  fold  1  acc  0.748587570621469
+epoch  93  fold  2  acc  0.7372881355932204
+epoch  93  fold  3  acc  0.7372881355932204
+epoch  93  fold  4  acc  0.7542372881355932
+epoch  93  fold  5  acc  0.748587570621469
+epoch  93  fold  6  acc  0.7598870056497176
+epoch  93  fold  7  acc  0.7478753541076487
+epoch  93  fold  8  acc  0.7365439093484419
+epoch  93  fold  9  acc  0.7507082152974505
+| epoch  93 | time:  6.66s | loss 74861.17 | mean 74.39 | std  1.20 | 
+[15:34:58]  Epoch 94  started
+[15:34:58]  It will start to train
+[15:35:2]  Finished Train
+epoch  94  fold  0  acc  0.7203389830508474
+epoch  94  fold  1  acc  0.748587570621469
+epoch  94  fold  2  acc  0.731638418079096
+epoch  94  fold  3  acc  0.731638418079096
+epoch  94  fold  4  acc  0.7542372881355932
+epoch  94  fold  5  acc  0.7401129943502824
+epoch  94  fold  6  acc  0.7627118644067796
+epoch  94  fold  7  acc  0.7450424929178471
+epoch  94  fold  8  acc  0.7393767705382436
+epoch  94  fold  9  acc  0.7478753541076487
+| epoch  94 | time:  6.60s | loss 74609.86 | mean 74.22 | std  1.23 | 
+[15:35:4]  Epoch 95  started
+[15:35:4]  It will start to train
+[15:35:9]  Finished Train
+epoch  95  fold  0  acc  0.7203389830508474
+epoch  95  fold  1  acc  0.748587570621469
+epoch  95  fold  2  acc  0.731638418079096
+epoch  95  fold  3  acc  0.7259887005649718
+epoch  95  fold  4  acc  0.7542372881355932
+epoch  95  fold  5  acc  0.7288135593220338
+epoch  95  fold  6  acc  0.751412429378531
+epoch  95  fold  7  acc  0.7450424929178471
+epoch  95  fold  8  acc  0.7422096317280453
+epoch  95  fold  9  acc  0.7563739376770539
+| epoch  95 | time:  6.67s | loss 75103.89 | mean 74.05 | std  1.28 | 
+[15:35:11]  Epoch 96  started
+[15:35:11]  It will start to train
+[15:35:15]  Finished Train
+epoch  96  fold  0  acc  0.7090395480225988
+epoch  96  fold  1  acc  0.751412429378531
+epoch  96  fold  2  acc  0.7259887005649718
+epoch  96  fold  3  acc  0.7288135593220338
+epoch  96  fold  4  acc  0.7570621468926554
+epoch  96  fold  5  acc  0.7372881355932204
+epoch  96  fold  6  acc  0.751412429378531
+epoch  96  fold  7  acc  0.7450424929178471
+epoch  96  fold  8  acc  0.7393767705382436
+epoch  96  fold  9  acc  0.7592067988668555
+| epoch  96 | time:  6.63s | loss 74771.51 | mean 74.05 | std  1.57 | 
+[15:35:18]  Epoch 97  started
+[15:35:18]  It will start to train
+[15:35:22]  Finished Train
+epoch  97  fold  0  acc  0.7090395480225988
+epoch  97  fold  1  acc  0.751412429378531
+epoch  97  fold  2  acc  0.7231638418079096
+epoch  97  fold  3  acc  0.7259887005649718
+epoch  97  fold  4  acc  0.7542372881355932
+epoch  97  fold  5  acc  0.7372881355932204
+epoch  97  fold  6  acc  0.7570621468926554
+epoch  97  fold  7  acc  0.7535410764872521
+epoch  97  fold  8  acc  0.7393767705382436
+epoch  97  fold  9  acc  0.7563739376770539
+| epoch  97 | time:  6.64s | loss 74797.69 | mean 74.07 | std  1.67 | 
+[15:35:24]  Epoch 98  started
+[15:35:24]  It will start to train
+[15:35:29]  Finished Train
+epoch  98  fold  0  acc  0.7175141242937854
+epoch  98  fold  1  acc  0.751412429378531
+epoch  98  fold  2  acc  0.7259887005649718
+epoch  98  fold  3  acc  0.7259887005649718
+epoch  98  fold  4  acc  0.7570621468926554
+epoch  98  fold  5  acc  0.7344632768361582
+epoch  98  fold  6  acc  0.7542372881355932
+epoch  98  fold  7  acc  0.7450424929178471
+epoch  98  fold  8  acc  0.7393767705382436
+epoch  98  fold  9  acc  0.7620396600566572
+| epoch  98 | time:  6.69s | loss 74270.92 | mean 74.13 | std  1.51 | 
+[15:35:31]  Epoch 99  started
+[15:35:31]  It will start to train
+[15:35:35]  Finished Train
+epoch  99  fold  0  acc  0.7033898305084746
+epoch  99  fold  1  acc  0.748587570621469
+epoch  99  fold  2  acc  0.7344632768361582
+epoch  99  fold  3  acc  0.731638418079096
+epoch  99  fold  4  acc  0.751412429378531
+epoch  99  fold  5  acc  0.7429378531073446
+epoch  99  fold  6  acc  0.7570621468926554
+epoch  99  fold  7  acc  0.7563739376770539
+epoch  99  fold  8  acc  0.7422096317280453
+epoch  99  fold  9  acc  0.7592067988668555
+| epoch  99 | time:  6.68s | loss 76096.56 | mean 74.27 | std  1.67 | 
+[15:35:38]  Epoch 100  started
+[15:35:38]  It will start to train
+[15:35:42]  Finished Train
+epoch  100  fold  0  acc  0.7062146892655368
+epoch  100  fold  1  acc  0.7429378531073446
+epoch  100  fold  2  acc  0.7288135593220338
+epoch  100  fold  3  acc  0.7288135593220338
+epoch  100  fold  4  acc  0.751412429378531
+epoch  100  fold  5  acc  0.7401129943502824
+epoch  100  fold  6  acc  0.7655367231638418
+epoch  100  fold  7  acc  0.7592067988668555
+epoch  100  fold  8  acc  0.7450424929178471
+epoch  100  fold  9  acc  0.7535410764872521
+| epoch 100 | time:  6.63s | loss 74366.12 | mean 74.22 | std  1.74 | 
+>>> Processing Experiment 0 / 0 <<<
+------------ Finished Processing ------------
